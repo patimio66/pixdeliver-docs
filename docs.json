@@ -1,68 +1,81 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "PixDeliver - Dokumentacja",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7C3AED",
+    "light": "#A78BFA",
+    "dark": "#5B21B6"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Dokumentacja",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Wprowadzenie",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "slowniczek"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Pierwsze kroki",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "pierwsze-kroki/tworzenie-konta",
+              "pierwsze-kroki/ustawienia-konta"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Zarządzanie galeriami",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "zarzadzanie-galeriami/tworzenie-galerii",
+              "zarzadzanie-galeriami/wgrywanie-zdjec",
+              "zarzadzanie-galeriami/organizowanie-zdjec",
+              "zarzadzanie-galeriami/ustawienia-galerii"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Płatności i plany",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "platnosci/plany-i-ceny",
+              "platnosci/proces-platnosci",
+              "platnosci/odnowienie-galerii",
+              "platnosci/kody-kuponow"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Udostępnianie galerii",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "udostepnianie/publiczne-linki",
+              "udostepnianie/ochrona-haslem"
+            ]
+          },
+          {
+            "group": "Selekcje zdjęć",
+            "pages": [
+              "selekcje/tworzenie-selekcji",
+              "selekcje/udostepnianie-selekcji",
+              "selekcje/zarzadzanie-zgloszeniami"
+            ]
+          },
+          {
+            "group": "Statystyki i analityka",
+            "pages": [
+              "statystyki/pulpit-glowny"
+            ]
+          },
+          {
+            "group": "Przewodnik dla klientów",
+            "pages": [
+              "przewodnik-klienta/przegladanie-galerii"
+            ]
+          },
+          {
+            "group": "Rozwiązywanie problemów",
+            "pages": [
+              "rozwiazywanie-problemow/faq"
             ]
           }
         ]
@@ -71,14 +84,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "PixDeliver.com",
+          "href": "https://pixdeliver.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Wsparcie",
+          "href": "mailto:support@pixdeliver.com",
+          "icon": "envelope"
         }
       ]
     }
@@ -90,33 +103,26 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Zaloguj się",
+        "href": "https://pixdeliver.com/login"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://pixdeliver.com/dashboard"
     }
   },
   "contextual": {
     "options": [
      "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
+     "view"
    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "facebook": "https://facebook.com/pixdeliver",
+      "instagram": "https://instagram.com/pixdeliver"
     }
   }
 }
