@@ -14,30 +14,34 @@ PixDeliver umożliwia wgrywanie zdjęć wysokiej jakości do galerii za pomocą 
 ### 1. Otwórz galerię
 
 **Instrukcja:**
-1. Zaloguj się do PixDeliver
-2. Przejdź do **Dashboard**
-3. Znajdź galerię, do której chcesz dodać zdjęcia
-4. Kliknij na nazwę galerii lub przycisk **Otwórz**
 
-**Rezultat:** Zobaczysz stronę galerii z przyciskiem do wgrywania zdjęć.
+1. Zaloguj się do PixDeliver
+2. Przejdź do zakładki **Galerie**
+3. Znajdź galerię, do której chcesz dodać zdjęcia i kliknij w nią
+
+**Rezultat:** Zobaczysz stronę galerii z zakładką do wgrywania zdjęć.
 
 ---
 
 ### 2. Rozpocznij wgrywanie
 
 **Instrukcja:**
+
 1. Kliknij przycisk **Wgraj zdjęcia** lub **Dodaj zdjęcia**
 2. Otworzy się okno wyboru plików
 
 **Alternatywna metoda (drag & drop):**
+
 1. Znajdź zdjęcia na swoim komputerze w Eksploratorze plików
 2. Przeciągnij je bezpośrednio na stronę galerii w przeglądarce
 3. Upuść je w wyznaczonym obszarze
 
-**Rezultat:** Rozpocznie się proces wgrywania wybranych zdjęć.
+<Warning>
+  Kolejność dodawania zdjęć ma znaczenie - zdjęcia w galerii zostaną ułożone w takiej samej kolejności, w jakiej zostały dodane.
+</Warning>
 
 <Tip>
-**Metoda przeciągnij-i-upuść** jest najszybsza! Możesz przeciągnąć cały folder ze zdjęciami bezpośrednio z Eksploratora plików.
+  **Metoda przeciągnij-i-upuść** jest najszybsza! Możesz przeciągnąć cały folder ze zdjęciami bezpośrednio z Eksploratora plików.
 </Tip>
 
 ---
@@ -45,6 +49,7 @@ PixDeliver umożliwia wgrywanie zdjęć wysokiej jakości do galerii za pomocą 
 ### 3. Wybierz zdjęcia do wgrania
 
 **Instrukcja:**
+
 1. W oknie wyboru plików przejdź do folderu ze zdjęciami
 2. Wybierz zdjęcia:
    - **Pojedyncze zdjęcie**: Kliknij na plik
@@ -59,6 +64,7 @@ PixDeliver umożliwia wgrywanie zdjęć wysokiej jakości do galerii za pomocą 
 ### 4. Monitoruj postęp wgrywania
 
 **Instrukcja:**
+
 1. Obserwuj pasek postępu dla każdego zdjęcia
 2. Zobaczysz:
    - Nazwę pliku
@@ -69,7 +75,7 @@ PixDeliver umożliwia wgrywanie zdjęć wysokiej jakości do galerii za pomocą 
 **Rezultat:** Możesz śledzić, które zdjęcia zostały już wgrane, a które są w trakcie.
 
 <Info>
-**Nie zamykaj przeglądarki** podczas wgrywania zdjęć. Jeśli przypadkowo zamkniesz kartę, wgrywanie zostanie przerwane i musisz je wznowić.
+  **Nie zamykaj przeglądarki** podczas wgrywania zdjęć. Jeśli przypadkowo zamkniesz kartę, wgrywanie zostanie przerwane i musisz je wznowić.
 </Info>
 
 ---
@@ -79,17 +85,18 @@ PixDeliver umożliwia wgrywanie zdjęć wysokiej jakości do galerii za pomocą 
 Po przesłaniu zdjęć system automatycznie je przetwarza:
 
 **Co się dzieje:**
+
 1. **Przesłanie** - Zdjęcie jest wysyłane na serwer
 2. **Zapisanie oryginału** - Plik oryginalny jest bezpiecznie zapisywany
 3. **Korekcja orientacji** - Automatyczna korekcja rotacji na podstawie EXIF
-4. **Generowanie miniaturki** - Tworzenie wersji 900×900 WebP do przeglądania
-5. **Generowanie wersji kompresowanej** - Tworzenie wersji 3840×3840 WebP do pobierania
+4. **Generowanie miniaturki** - Tworzenie wersji 900×900 WebP do przeglądania jako miniaturki
+5. **Generowanie wersji kompresowanej** - Tworzenie wersji 3840×3840 WebP do dużego podglądu
 6. **Finalizacja** - Zdjęcie jest gotowe i widoczne w galerii
 
 **Rezultat:** Zdjęcia pojawią się w galerii i będą dostępne do przeglądania.
 
 <Tip>
-Czas przetwarzania zależy od rozmiaru pliku. Zazwyczaj trwa od kilku sekund do kilku minut na zdjęcie.
+  Czas przetwarzania zależy od rozmiaru pliku. Zazwyczaj trwa od kilku do kilkunastu sekund na zdjęcie. Przetwarzanie odbywa się na serwerze, więc nie musisz mieć do niego otwartej przeglądarki.
 </Tip>
 
 ---
@@ -101,17 +108,13 @@ Czas przetwarzania zależy od rozmiaru pliku. Zazwyczaj trwa od kilku sekund do 
 PixDeliver obsługuje wszystkie popularne formaty zdjęć:
 
 ✅ **Zalecane formaty:**
-- JPEG / JPG (najczęściej używany)
-- PNG (dla zdjęć z przezroczystością)
-- WebP (nowoczesny format)
-- HEIC / HEIF (zdjęcia z iPhone)
 
-✅ **Inne obsługiwane formaty:**
-- BMP
-- TIFF
+- **JPEG / JPG (najczęściej używany)**
+- PNG (dla obrazów z przezroczystością)
+- WebP (nowoczesny format, skompresowany, może jednak być niekompatybilny z niektórymi urządzeniami)
 
 <Info>
-System automatycznie konwertuje wszystkie formaty do WebP dla optymalnej jakości i szybkości ładowania.
+  System automatycznie konwertuje wszystkie formaty do WebP dla optymalnej jakości i szybkości ładowania. Oryginalne zdjęcia są dostępne do pobrania zarówno dla Twoich klientów, jak i dla Ciebie. Zawsze pobierany jest oryginał zdjęcia.
 </Info>
 
 ### Limity rozmiaru
@@ -123,41 +126,35 @@ System automatycznie konwertuje wszystkie formaty do WebP dla optymalnej jakośc
   - Plan Duża galeria: Bez limitu
 
 <Warning>
-Jeśli zdjęcie przekracza 30 MB, musisz je zmniejszyć przed wgraniem. Użyj programu do edycji zdjęć lub zmniejsz jakość/rozdzielczość.
+  Jeśli zdjęcie przekracza 30 MB, musisz je zmniejszyć przed wgraniem. Użyj programu do edycji zdjęć lub zmniejsz jakość/rozdzielczość.
 </Warning>
 
 ---
 
 ## Wersje zdjęć
 
-PixDeliver automatycznie tworzy trzy wersje każdego zdjęcia:
+Aby zapewnić optymalne wrażenia z przeglądania zdjęć, PixDeliver stosuje rozwiązania znane z popularnych aplikacji do przechowywania obrazów, i automatycznie tworzy trzy wersje każdego zdjęcia:
 
 ### 1. Oryginał
+
 - Przechowywany dokładnie w takiej formie, w jakiej został wgrany
 - Bez kompresji, bez zmian jakości
-- Używany tylko do pobierania "oryginału" przez klientów
+- Używany do pobierania "oryginału" przez klientów
 - Nie jest wyświetlany w przeglądarce
 
 ### 2. Miniaturka (Thumbnail)
+
 - Rozmiar: 900×900 pikseli
 - Format: WebP
-- Proporcje: Zachowane (zdjęcie nie jest przycinane)
-- Używane do: Wyświetlania w siatce galerii i w lightboxie
+- Używane do: Wyświetlania w siatce galerii
 - Jakość: Wysoka, zoptymalizowana do szybkiego ładowania
 
 ### 3. Wersja kompresowana
+
 - Rozmiar: 3840×3840 pikseli (4K)
 - Format: WebP
-- Proporcje: Zachowane
-- Używane do: Pobierania przez klientów (opcja domyślna)
+- Używane do: podgląd na pełnym ekranie
 - Jakość: Bardzo wysoka, ale mniejszy rozmiar pliku niż oryginał
-
-<Info>
-**Dlaczego trzy wersje?**
-- Oryginał - dla klientów, którzy potrzebują najwyższej jakości
-- Kompresowana - dla większości zastosowań (media społecznościowe, wydruki do A3)
-- Miniaturka - dla szybkiego przeglądania galerii
-</Info>
 
 ---
 
@@ -171,19 +168,7 @@ PixDeliver automatycznie wykrywa i poprawia orientację zdjęć na podstawie dan
 - Zdjęcia poziome są wyświetlane poziomo
 - Zdjęcia obrócone są automatycznie prostowane
 
-**Nie musisz ręcznie obracać zdjęć przed wgraniem!**
-
-### Zachowanie metadanych
-
-- Data i godzina wykonania zdjęcia
-- Aparat i obiektyw
-- Ustawienia: przysłona, czas naświetlania, ISO
-- Lokalizacja GPS (jeśli dostępna)
-- Autor i prawa autorskie
-
-<Tip>
-Metadane są przydatne dla klientów profesjonalnych lub gdy chcesz pokazać parametry techniczne zdjęć.
-</Tip>
+Nie musisz ręcznie obracać zdjęć przed wgraniem.
 
 ---
 
@@ -191,21 +176,15 @@ Metadane są przydatne dla klientów profesjonalnych lub gdy chcesz pokazać par
 
 Czasami przetwarzanie zdjęcia może się nie powieść (uszkodzony plik, nieobsługiwany format, problem techniczny).
 
-### Sprawdzanie statusu
+### Błędy w konwersji zdjęć
 
-**Instrukcja:**
-1. Przejdź do **Dashboard**
-2. Jeśli są nieudane konwersje, zobaczysz powiadomienie:
-   - "❌ Nieudane konwersje: 3 zdjęcia"
-3. Kliknij powiadomienie, aby zobaczyć szczegóły
-
-**Rezultat:** Zobaczysz listę zdjęć, które nie zostały przetworzone, wraz z przyczynami.
+System automatycznie podejmuje próby ponowenia konwersji plików do kilkanaście minut. Jeśli pomimo upływu czasu zdjęcie nie jest przetworzone, upewnij się, że nie jest ono uszkodzone.
 
 ### Rozwiązywanie problemów
 
 **Instrukcja:**
-1. Pobierz listę nieudanych zdjęć
-2. Sprawdź, czy pliki nie są uszkodzone
+
+1. Sprawdź, czy pliki nie są uszkodzone
 3. Upewnij się, że format jest obsługiwany
 4. Zmniejsz rozmiar pliku, jeśli przekracza 30 MB
 5. Wgraj zdjęcia ponownie
@@ -213,7 +192,7 @@ Czasami przetwarzanie zdjęcia może się nie powieść (uszkodzony plik, nieobs
 **Rezultat:** Poprawne zdjęcia zostaną przetworzone i dodane do galerii.
 
 <Warning>
-System wysyła powiadomienie email gdy wykryje nieudaną konwersję. Sprawdź ustawienia powiadomień, aby upewnić się, że ta opcja jest włączona.
+  System wysyła powiadomienie, gdy wykryje nieudaną konwersję.
 </Warning>
 
 ---
@@ -221,19 +200,20 @@ System wysyła powiadomienie email gdy wykryje nieudaną konwersję. Sprawdź us
 ## Wskazówki i najlepsze praktyki
 
 ✅ **Zalecane:**
+
 - Wgrywaj zdjęcia w wysokiej jakości (najlepiej eksport z Lightroom/Capture One)
 - Używaj formatu JPEG z jakością 90-95% dla optymalnego balansu jakość/rozmiar
 - Przesyłaj wszystkie zdjęcia jednocześnie (szybsze niż po kolei)
 - Używaj szybkiego łącza internetowego (najlepiej przewodowego)
 - Przetwarzaj zdjęcia przed wgraniem (korekcja kolorów, kadrowanie)
 - Nazywaj pliki w sposób uporządkowany (np. 001.jpg, 002.jpg, etc.)
-- Wgrywaj w godzinach mniejszego ruchu dla szybszego przetwarzania
 
 ❌ **Unikaj:**
+
 - Wgrywania zdjęć w niskiej jakości lub małych rozmiarach
 - Przesyłania tych samych zdjęć wielokrotnie
 - Zamykania przeglądarki podczas wgrywania
-- Wgrywania zdjęć przez wolne WiFi (lepiej użyć kabla)
+- Wgrywania zdjęć przez wolne WiFi
 - Przesyłania plików RAW (najpierw wyeksportuj do JPEG)
 - Wgrywania zdjęć większych niż 30 MB bez wcześniejszej kompresji
 
@@ -244,6 +224,7 @@ System wysyła powiadomienie email gdy wykryje nieudaną konwersję. Sprawdź us
 ### Eksport z Lightroom
 
 Zalecane ustawienia eksportu:
+
 - **Format:** JPEG
 - **Jakość:** 90-95%
 - **Rozdzielczość:** Długość dłuższego boku 4000-6000 pikseli
@@ -254,6 +235,7 @@ Zalecane ustawienia eksportu:
 ### Eksport z Capture One
 
 Zalecane ustawienia:
+
 - **Format:** JPEG
 - **Jakość:** 95%
 - **Rozdzielczość:** 4000-6000 pikseli (dłuższy bok)
@@ -268,63 +250,39 @@ Zalecane ustawienia:
 - **Profil kolorów:** Konwertuj na sRGB
 
 <Info>
-**Dlaczego sRGB?**
-To standard przestrzeni kolorów dla wyświetlania w internecie. Adobe RGB lub ProPhoto RGB mogą wyglądać blado w przeglądarkach.
+  **Dlaczego sRGB?** To standard przestrzeni kolorów dla wyświetlania w Internecie. Adobe RGB lub ProPhoto RGB mogą wyglądać blado w przeglądarkach, na standardowych monitorach.
 </Info>
-
----
-
-## Masowe wgrywanie
-
-### Wgrywanie setek zdjęć
-
-Jeśli masz dużą sesję (np. wesele, event):
-
-**Instrukcja:**
-1. Podziel zdjęcia na grupy po 100-200 sztuk
-2. Wgraj pierwszą grupę
-3. Poczekaj, aż wszystkie zostaną przetworzone
-4. Wgraj kolejną grupę
-5. Powtórz proces
-
-**Dlaczego?**
-- Lepsza kontrola nad procesem
-- Łatwiej znaleźć ewentualne błędy
-- Mniejsze ryzyko utraty połączenia w trakcie
-- Możesz zacząć organizować pierwsze zdjęcia, gdy kolejne się wgrywają
 
 ---
 
 ## Rozwiązywanie problemów
 
-**Problem:** Wgrywanie trwa bardzo długo
-**Rozwiązanie:**
+**Problem:** Wgrywanie trwa bardzo długo. **Rozwiązanie:**
+
 - Sprawdź prędkość swojego łącza internetowego
 - Użyj połączenia przewodowego zamiast WiFi
 - Zmniejsz liczbę jednocześnie wgrywanych zdjęć
-- Spróbuj w innym czasie (mniej obciążenie serwera)
 
-**Problem:** Zdjęcie zostało odrzucone (przekracza 30 MB)
-**Rozwiązanie:**
+**Problem:** Zdjęcie zostało odrzucone (przekracza 30 MB). **Rozwiązanie:**
+
 - Zmniejsz jakość eksportu do 85-90%
 - Zmniejsz rozdzielczość (np. do 5000 pikseli długość dłuższego boku)
 - Użyj kompresji w programie graficznym
 
-**Problem:** Zdjęcie jest obrócone nieprawidłowo
-**Rozwiązanie:**
+**Problem:** Zdjęcie jest obrócone nieprawidłowo. **Rozwiązanie:**
+
 - Obróć zdjęcie w programie graficznym
 - Zapisz z poprawnymi danymi EXIF orientacji
 - Wgraj ponownie
 
-**Problem:** Konwersja zdjęcia nie powiodła się
-**Rozwiązanie:**
+**Problem:** Konwersja zdjęcia nie powiodła się. **Rozwiązanie:**
+
 - Sprawdź, czy plik nie jest uszkodzony (otwórz w programie graficznym)
 - Upewnij się, że format jest obsługiwany
 - Spróbuj ponownie wyeksportować zdjęcie z programu do edycji
-- Jeśli problem się powtarza, skontaktuj się z supportem
 
-**Problem:** Po wgraniu zdjęcia mają złe kolory
-**Rozwiązanie:**
+**Problem:** Po wgraniu zdjęcia mają złe kolory. **Rozwiązanie:**
+
 - Upewnij się, że eksportujesz w profilu sRGB
 - Sprawdź ustawienia eksportu w programie do edycji
 - Nie używaj Adobe RGB ani ProPhoto RGB
@@ -337,7 +295,7 @@ Po zakończeniu wgrywania:
 
 <CardGroup cols={2}>
   <Card title="Organizuj zdjęcia" icon="arrow-down-short-wide" href="/zarzadzanie-galeriami/organizowanie-zdjec">
-    Ustaw kolejność i wybierz zdjęcie główne
+    Ustaw kolejność i dodaj zdjęcie główne
   </Card>
   <Card title="Sprawdź galerię" icon="eye" href="/udostepnianie/publiczne-linki">
     Zobacz, jak galeria wygląda dla klientów
