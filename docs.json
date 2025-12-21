@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "PixDeliver - Dokumentacja",
   "colors": {
-    "primary": "#7C3AED",
-    "light": "#A78BFA",
-    "dark": "#5B21B6"
+    "primary": "#4F46E5",
+    "light": "#736CF0",
+    "dark": "#363185"
   },
   "favicon": "/favicon.svg",
   "navigation": {
