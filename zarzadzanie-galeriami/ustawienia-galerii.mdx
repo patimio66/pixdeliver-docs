@@ -173,14 +173,14 @@ Dla aktywnych galerii zobaczysz datę wygaśnięcia na stronie z listą galerii:
 **Przykład:**
 
 ```
-Pakiet: Mała galeria
-Data wygaśnięcia: 15.06.2025
+Utworzono: 15.06.2025
+Wygasa: 15.06.2026
 ```
 
 <Info>
   System wysyła automatyczne powiadomienia:
 
-  - **30 dni przed wygaśnięciem** - możesz przedłużyć galerię
+  - **30 dni przed wygaśnięciem** - od tego momentu możesz przedłużyć galerię o rok
   - **14 dni przed wygaśnięciem** - przypomnienie
   - **7 dni przed wygaśnięciem** - przypomnienie
 </Info>
@@ -189,31 +189,18 @@ Data wygaśnięcia: 15.06.2025
 
 **Instrukcja:**
 
-1. W sekcji **Status** kliknij przycisk **Przedłuż galerię**
-2. Wybierz plan (taki sam jak poprzednio lub inny)
+1. Otwórz wybraną galerię - zobaczysz powiadomienie o wygaśnięciu
+2. Plan zostaje taki sam, jaki był użyty przy tworzeniu galerii
 3. Przejdź do płatności
 4. Po opłaceniu galeria będzie aktywna przez kolejny rok
 
-**Rezultat:** Data wygaśnięcia zostanie przedłużona o dodatkowe 12 miesięcy.
-
----
-
-## Statystyki szybkie
-
-W ustawieniach galerii masz szybki podgląd podstawowych statystyk:
-
-- **Liczba zdjęć** - ile zdjęć znajduje się w galerii
-- **Całkowity rozmiar** - zajęta przestrzeń dyskowa
-- **Wyświetlenia** (tylko dla aktywnych galerii) - ile razy galeria została otwarta
-- **Pobrania** (tylko dla aktywnych galerii) - ile razy zdjęcia zostały pobrane
-
-<Info>
-  Dla pełnych statystyk przejdź do sekcji **Statystyki galerii** używając przycisku **Zobacz pełne statystyki**.
-</Info>
-
----
+**Rezultat:** Data wygaśnięcia zostanie przedłużona o dodatkowy 1 rok.
 
 ## Usuwanie galerii
+
+<Danger>
+  Przed usunięciem galerii upewnij się, że masz kopie zapasowe wszystkich zdjęć!
+</Danger>
 
 ### Trwałe usunięcie galerii
 
@@ -233,12 +220,11 @@ Jeśli nie potrzebujesz już galerii:
 <Warning>
   **To działanie jest nieodwracalne!**
 
-  - Wszystkie zdjęcia (oryginały, miniatury, kompresowane) zostaną usunięte
+  - Wszystkie zdjęcia z wybranej galerii zostaną usunięte
   - Link do galerii przestanie działać
   - Statystyki zostaną utracone
   - Selekcje zdjęć zostaną usunięte
   - **Nie będzie możliwości przywrócenia danych**
-  - Upewnij się, że masz kopie zapasowe wszystkich zdjęć!
 </Warning>
 
 ---
@@ -251,19 +237,10 @@ Przed usunięciem galerii lub dla archiwum możesz pobrać wszystkie zdjęcia:
 
 **Instrukcja:**
 
-1. W sekcji **Eksport** kliknij **Pobierz wszystkie zdjęcia**
-2. Wybierz wersję do pobrania:
-   - **Oryginały** - pliki w oryginalnej jakości (dokładnie jak wgrane)
-   - **Kompresowane** - wersje WebP 3840×3840
-3. Kliknij **Generuj archiwum ZIP**
-4. Poczekaj na wygenerowanie (może potrwać kilka minut dla dużych galerii)
-5. Kliknij **Pobierz** gdy archiwum będzie gotowe
+1. Otwórz wybraną galerię
+1. Kliknij przycisk **Pobierz** w menu galerii
 
 **Rezultat:** Pobierzesz plik ZIP ze wszystkimi zdjęciami z galerii.
-
-<Tip>
-  Archiwum ZIP jest ważne przez 2 godziny. Po tym czasie musisz wygenerować je ponownie.
-</Tip>
 
 ---
 
@@ -271,7 +248,7 @@ Przed usunięciem galerii lub dla archiwum możesz pobrać wszystkie zdjęcia:
 
 ✅ **Zalecane:**
 
-- Ustaw opisową nazwę galerii zawierającą imiona klientów
+- Ustaw opisową nazwę galerii
 - Dodaj opis z instrukcjami dla klientów
 - Używaj subdomeny dla profesjonalnego wizerunku
 - Nie zmieniaj slug po udostępnieniu galerii
@@ -286,39 +263,37 @@ Przed usunięciem galerii lub dla archiwum możesz pobrać wszystkie zdjęcia:
 - Usuwania galerii bez pobrania kopii zapasowej
 - Używania tego samego hasła dla wszystkich galerii
 - Pozostawiania galerii bez nazwy lub z nazwą "Test"
-- Ignorowania powiadomień o zbliżającym się wygaśnięciu
-- Zbyt częstej zmiany ustawień (wprowadza zamieszanie)
 
 ---
 
 ## Rozwiązywanie problemów
 
-**Problem:** Nie mogę zmienić slug - jest zajęty **Rozwiązanie:**
+**Problem:** Nie mogę zmienić slug - jest zajęty. **Rozwiązanie:**
 
 - Slug musi być unikalny w ramach Twojego konta
 - Sprawdź, czy nie masz już galerii z tym samym slug
 - Dodaj cyfry, datę lub dodatkowy opis (np. `-2024`, `-wesele`)
 
-**Problem:** Klienci nie mogą otworzyć galerii po zmianie slug **Rozwiązanie:**
+**Problem:** Klienci nie mogą otworzyć galerii po zmianie slug. **Rozwiązanie:**
 
 - Wyślij im nowy link z zaktualizowanym slug
 - Stary link już nie działa i nie ma przekierowania
-- Na przyszłość nie zmieniaj slug po udostępnieniu galerii
+- Na przyszłość <u>nie zmieniaj</u> slug po udostępnieniu galerii
 
-**Problem:** Hasło nie działa dla klientów **Rozwiązanie:**
+**Problem:** Hasło nie działa dla klientów. **Rozwiązanie:**
 
 - Sprawdź, czy hasło jest wpisane poprawnie (wielkość liter ma znaczenie)
 - Upewnij się, że hasło nie zawiera spacji na początku lub końcu
 - Zobacz aktualne hasło w ustawieniach galerii
 - Wyślij hasło klientom ponownie (skopiuj bezpośrednio z ustawień)
 
-**Problem:** Galeria wygasła, ale nie chcę jej usuwać **Rozwiązanie:**
+**Problem:** Galeria wygasła, ale nie chcę jej usuwać. **Rozwiązanie:**
 
 - Przedłuż galerię przed upływem 14 dni od wygaśnięcia
 - Po 14 dniach galeria może zostać automatycznie usunięta
 - Przedłużenie odnowi dostępność galerii na kolejny rok
 
-**Problem:** Nie widzę przycisku "Zapisz zmiany" **Rozwiązanie:**
+**Problem:** Nie widzę przycisku "Zapisz zmiany". **Rozwiązanie:**
 
 - Przewiń formularz do końca - przycisk jest na dole
 - Odśwież stronę (Ctrl+F5)
