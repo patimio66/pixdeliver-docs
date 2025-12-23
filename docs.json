@@ -39,7 +39,6 @@
             "group": "Płatności i plany",
             "pages": [
               "platnosci/plany-i-ceny",
-              "platnosci/proces-platnosci",
               "platnosci/odnowienie-galerii",
               "platnosci/kody-kuponow"
             ]
