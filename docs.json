@@ -5,7 +5,7 @@
   "colors": {
     "primary": "#4F46E5",
     "light": "#736CF0",
-    "dark": "#363185"
+    "dark": "#3C359C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -16,8 +16,7 @@
           {
             "group": "Wprowadzenie",
             "pages": [
-              "index",
-              "slowniczek"
+              "index"
             ]
           },
           {
@@ -76,6 +75,13 @@
             "group": "Rozwiązywanie problemów",
             "pages": [
               "rozwiazywanie-problemow/faq"
+            ]
+          },
+          {
+            "group": "Sekcja prawna",
+            "pages": [
+              "sekcja-prawna/polityka-prywatnosci",
+              "sekcja-prawna/regulamin"
             ]
           }
         ]
