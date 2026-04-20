@@ -1,0 +1,149 @@
+---
+title: "Własna subdomena"
+description: "Udostępniaj galerie pod adresem twojastudio.pixdeliver.com zamiast podstawowego pixdeliver.com/g/..."
+---
+
+## Przegląd
+
+Subdomena to Twoja osobista przestrzeń w PixDeliver. Po jej ustawieniu wszystkie Twoje galerie i selekcje są dostępne pod profesjonalnie wyglądającym adresem `twojastudio.pixdeliver.com`, zamiast podstawowego `pixdeliver.com/g/nazwa-galerii`.
+
+**Kluczowe informacje:**
+
+- Subdomena jest przypisana do **Twojego konta**, nie do pojedynczej galerii — jedna subdomena obejmuje wszystkie Twoje galerie i selekcje
+- Funkcja jest **bezpłatna** i dostępna na każdym planie (również bez aktywnej subskrypcji)
+- Subdomena jest **opcjonalna** — bez niej galerie nadal działają pod podstawowym adresem `pixdeliver.com/g/...`
+- Nie wymaga konfiguracji DNS po Twojej stronie — wszystko obsługujemy automatycznie
+
+---
+
+## Jak ustawić subdomenę
+
+**Instrukcja:**
+
+1. Przejdź do **Ustawienia** → **Profil**
+2. W polu **Subdomena (opcjonalne)** wpisz wybraną nazwę
+3. System sprawdzi dostępność na bieżąco — zobaczysz komunikat:
+   - "Sprawdzanie dostępności..."
+   - ✓ "Ta subdomena jest dostępna"
+   - ✗ "Subdomena jest zajęta, zarezerwowana lub ma niepoprawny format"
+4. Kliknij **Zapisz**
+
+**Rezultat:** Subdomena działa od razu. Wszystkie Twoje galerie są dostępne pod nowym adresem.
+
+### Wymagania nazwy
+
+<Info>
+  - **Długość:** od 3 do 63 znaków
+  - **Dozwolone znaki:** małe litery (`a-z`), cyfry (`0-9`), myślniki (`-`)
+  - **Nie może** zaczynać się ani kończyć myślnikiem
+  - **Musi być unikalna** w całym systemie
+  - **Zarezerwowane słowa są zablokowane** — m.in. `www`, `api`, `admin`, `mail`, `app`, `cdn`, `dev`, `test`, `staging`, `dashboard`, `support`, `blog`, `shop` i kilkadziesiąt innych prefiksów technicznych
+</Info>
+
+<Tip>
+  Jeśli ulubiona nazwa jest zajęta, dodaj inicjał lub specjalizację — np. `kowalski-foto`, `jk-studio`, `kowalski-wesela`.
+</Tip>
+
+---
+
+## Adresy URL po ustawieniu subdomeny
+
+Gdy masz ustawioną subdomenę (np. `kowalski`), Twoje galerie i selekcje są dostępne pod krótkimi adresami:
+
+| Zasób | Adres |
+| --- | --- |
+| Galeria publiczna | `https://kowalski.pixdeliver.com/wesele-anna-tomasz` |
+| Selekcja zdjęć | `https://kowalski.pixdeliver.com/select/{token}` |
+| Pobranie pojedynczego zdjęcia | obsługiwane automatycznie z poziomu galerii |
+
+Bez subdomeny te same zasoby są dostępne pod podstawowymi adresami:
+
+| Zasób | Adres |
+| --- | --- |
+| Galeria publiczna | `https://pixdeliver.com/g/wesele-anna-tomasz` |
+| Selekcja zdjęć | `https://pixdeliver.com/select/{token}` |
+
+<Info>
+  Po ustawieniu subdomeny **oba formaty** zazwyczaj nadal działają, ale rekomendowane jest udostępnianie wyłącznie wersji z subdomeną — wygląda profesjonalniej i buduje rozpoznawalność marki.
+</Info>
+
+---
+
+## Zmiana subdomeny
+
+Możesz w każdej chwili zmienić nazwę subdomeny w **Ustawienia** → **Profil**.
+
+<Warning>
+  **Stare linki przestają działać natychmiast.** Po zmianie subdomeny wszystkie wcześniej udostępnione adresy z poprzednią nazwą zwrócą błąd. System pokaże modal ostrzegający przed zapisaniem zmiany, jeśli na koncie są galerie.
+</Warning>
+
+**Po zmianie subdomeny musisz:**
+
+- Skopiować nowe linki do galerii z panelu zarządzania
+- Wysłać zaktualizowane linki klientom, którzy jeszcze nie pobrali zdjęć
+- Zaktualizować linki na stronie firmowej, w mailach i wizytówkach
+
+<Tip>
+  Najlepiej ustawić subdomenę **przed** udostępnieniem pierwszej galerii i nie zmieniać jej później.
+</Tip>
+
+---
+
+## Usunięcie subdomeny
+
+Jeśli chcesz wrócić do podstawowych adresów `pixdeliver.com/g/...`:
+
+1. Przejdź do **Ustawienia** → **Profil**
+2. **Wyczyść** pole subdomeny (zostaw puste)
+3. Zapisz
+
+**Rezultat:** Twoje galerie wracają na podstawowe adresy. Subdomena staje się dostępna dla innych użytkowników.
+
+<Warning>
+  System zablokuje usunięcie subdomeny, jeśli powstałby konflikt slug galerii — czyli gdy Twoja galeria ma tę samą nazwę slug, co galeria innego użytkownika obsługiwana z głównej domeny. W takim wypadku najpierw zmień slug konfliktowej galerii.
+</Warning>
+
+---
+
+## Limity dostępu
+
+Subdomeny mają takie same zabezpieczenia anty-nadużyciowe jak adresy podstawowe:
+
+| Działanie | Limit |
+| --- | --- |
+| Wpisanie hasła do galerii | 10 prób / minutę / IP |
+| Pobranie pojedynczego zdjęcia | 60 / minutę / IP |
+| Wygenerowanie linku pobrania | 5 / minutę / IP |
+| Otwarcie selekcji | 60 / minutę / IP |
+
+Limity dotyczą publicznego dostępu i są niewidoczne dla typowego użytkownika — chronią galerie przed automatycznym pobieraniem.
+
+---
+
+## Często zadawane pytania
+
+**Czy mogę użyć własnej domeny (np. `foto.moja-strona.pl`)?**
+Nie. Obecnie obsługujemy wyłącznie subdomeny w formacie `*.pixdeliver.com`.
+
+**Czy subdomena kosztuje?**
+Nie. Funkcja jest bezpłatna i dostępna na każdym planie — również jeśli nie masz aktywnej żadnej płatnej galerii.
+
+**Czy potrzebuję skonfigurować DNS lub kupić domenę?**
+Nie. Wszystko obsługujemy automatycznie po stronie PixDeliver.
+
+**Czy każda galeria może mieć swoją osobną subdomenę?**
+Nie. Subdomena jest wspólna dla całego konta — obejmuje wszystkie Twoje galerie i selekcje.
+
+**Co się stanie, gdy ktoś zwolni atrakcyjną subdomenę?**
+Subdomeny działają na zasadzie "kto pierwszy, ten lepszy". Nie ma kolejki ani powiadomień o zwalnianych nazwach.
+
+**Czy adres podstawowy `pixdeliver.com/g/{slug}` przestaje działać po ustawieniu subdomeny?**
+Adres podstawowy nadal działa. Rekomendujemy jednak udostępnianie wyłącznie wersji z subdomeną.
+
+---
+
+## Powiązane tematy
+
+- [Publiczne linki](/udostepnianie/publiczne-linki) - Wszystko o udostępnianiu galerii klientom
+- [Ustawienia konta](/pierwsze-kroki/ustawienia-konta) - Pełen przegląd ustawień profilu
+- [Tworzenie galerii](/zarzadzanie-galeriami/tworzenie-galerii) - Pierwszy krok do udostępnienia zdjęć

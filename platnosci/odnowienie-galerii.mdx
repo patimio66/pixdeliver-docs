@@ -5,14 +5,18 @@ description: "Dowiedz się, jak przedłużyć ważność galerii po upływie rok
 
 ## Przegląd
 
-Każda galeria w PixDeliver jest ważna przez 1 rok od daty opłacenia. Po upływie tego czasu galeria wygasa i przestaje być dostępna publicznie. Możesz jednak łatwo przedłużyć ważność galerii, opłacając kolejny rok.
+Każda galeria w PixDeliver opłacona planem per-galeria jest ważna przez 1 rok od daty opłacenia. Po upływie tego czasu galeria wygasa i przestaje być dostępna publicznie. Możesz jednak łatwo przedłużyć ważność galerii, opłacając kolejny rok.
 
 **Kluczowe informacje:**
-- Galeria jest ważna przez 365 dni od daty płatności
-- Otrzymasz powiadomienia przed wygaśnięciem
-- Możesz przedłużyć galerię do 30 dni przed wygaśnięciem
-- Po wygaśnięciu masz 14 dni na odnowienie
-- Po 14 dniach galeria może zostać trwale usunięta
+- Galeria z planem per-galeria jest ważna przez 365 dni od daty płatności
+- Otrzymasz powiadomienia email przed wygaśnięciem
+- Możesz przedłużyć galerię w oknie 30 dni przed wygaśnięciem
+- Po wygaśnięciu masz 14 dni okresu karencji na odnowienie
+- Po 14 dniach galeria zostaje trwale usunięta wraz ze zdjęciami
+
+<Info>
+  Galerie objęte aktywnym **Kontem Studio** nie wymagają osobnego odnowienia per-galeria — są opłacone na poziomie konta. Patrz: [Subskrypcja Konta Studio](/platnosci/subskrypcja-konta).
+</Info>
 
 ---
 
@@ -57,8 +61,8 @@ System automatycznie wysyła powiadomienia email o zbliżającym się wygaśnię
 
 **Co się dzieje:**
 - Galeria staje się niedostępna dla klientów
-- Link zwraca błąd 404
-- Zdjęcia pozostają na serwerze
+- Klienci otwierający link widzą stronę informującą, że galeria wygasła
+- Zdjęcia pozostają bezpiecznie na serwerze przez okres karencji
 - Masz 14 dni na odnowienie
 
 ### 14 dni po wygaśnięciu
@@ -215,11 +219,11 @@ Kody kuponów mogą być jednorazowe lub wielokrotnego użytku - zależy to od u
 ### Natychmiastowo po wygaśnięciu
 
 **Co przestaje działać:**
-- ❌ Link do galerii (zwraca błąd 404)
+- ❌ Publiczny dostęp do galerii — klienci widzą stronę "Galeria wygasła"
 - ❌ Możliwość przeglądania przez klientów
-- ❌ Możliwość pobierania zdjęć
+- ❌ Możliwość pobierania zdjęć przez klientów
 - ❌ Formularze selekcji zdjęć
-- ❌ Zbieranie statystyk
+- ❌ Zbieranie nowych statystyk
 
 **Co nadal działa:**
 - ✅ Dostęp do galerii w panelu zarządzania (dla Ciebie)
@@ -376,8 +380,30 @@ Nie. Po opłaceniu przedłużenia płatność nie podlega zwrotowi, a galeria je
 
 ---
 
+## Galerie objęte Kontem Studio
+
+Jeśli galeria jest objęta aktywnym **Kontem Studio**, odnowienie per-galeria nie jest wymagane — subskrypcja konta pokrywa wszystkie galerie łącznie.
+
+**Zasada wygaśnięcia:** galeria pozostaje aktywna do **późniejszej z dwóch dat**:
+
+- Daty wygaśnięcia własnego planu per-galeria (jeśli został kiedyś opłacony)
+- Daty wygaśnięcia Konta Studio
+
+**Co to oznacza w praktyce:**
+
+- Po wygaśnięciu planu per-galeria, ale z aktywnym Kontem Studio — galeria działa dalej bez przerwy
+- Po wygaśnięciu Konta Studio, ale z aktywnym planem per-galeria — galeria działa dalej do końca własnego rocznego okresu
+- Po wygaśnięciu **obu** terminów — galeria wchodzi w 14-dniowy okres karencji, po którym zostaje trwale usunięta
+
+<Info>
+  W panelu galerii przy aktywnym Koncie Studio przycisk przedłużenia per-galeria jest nieaktywny — odnowienie odbywa się wyłącznie na poziomie konta: [Subskrypcja Konta Studio](/platnosci/subskrypcja-konta).
+</Info>
+
+---
+
 ## Powiązane tematy
 
 - [Plany i ceny](/platnosci/plany-i-ceny) - Szczegóły planów, ceny i jak opłacić przedłużenie
+- [Subskrypcja Konta Studio](/platnosci/subskrypcja-konta) - Pokrycie wszystkich galerii jedną subskrypcją
 - [Kody kuponów](/platnosci/kody-kuponow) - Użyj kodu przy przedłużeniu
 - [Ustawienia galerii](/zarzadzanie-galeriami/ustawienia-galerii) - Zarządzanie galerią

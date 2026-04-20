@@ -39,6 +39,7 @@
             "group": "Płatności i plany",
             "pages": [
               "platnosci/plany-i-ceny",
+              "platnosci/subskrypcja-konta",
               "platnosci/odnowienie-galerii",
               "platnosci/kody-kuponow"
             ]
@@ -47,6 +48,7 @@
             "group": "Udostępnianie galerii",
             "pages": [
               "udostepnianie/publiczne-linki",
+              "udostepnianie/subdomeny",
               "udostepnianie/ochrona-haslem"
             ]
           },

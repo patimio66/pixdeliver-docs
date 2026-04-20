@@ -22,6 +22,8 @@ Panel ustawień konta pozwala na pełną personalizację profilu, konfigurację 
 
 ## Ustawienia profilu
 
+Panel **Profil** to główna zakładka ustawień, w której skonfigurujesz nazwę, email, subdomenę, język interfejsu oraz w której znajduje się przycisk usunięcia konta.
+
 ### Edycja danych osobowych
 
 **Instrukcja:**
@@ -35,62 +37,38 @@ Panel ustawień konta pozwala na pełną personalizację profilu, konfigurację 
 **Rezultat:** Twoje dane zostaną zaktualizowane w systemie.
 
 <Warning>
-  **Zmiana adresu email:** Po zmianie emaila otrzymasz wiadomość weryfikacyjną na nowy adres. Musisz potwierdzić zmianę, klikając link w emailu.
+  **Zmiana adresu email:** Po zmianie emaila otrzymasz wiadomość weryfikacyjną na nowy adres. Musisz potwierdzić zmianę, klikając link w emailu. Adresy z domen "tymczasowego maila" są blokowane.
 </Warning>
 
 ---
 
-## Konfiguracja subdomeny
+### Konfiguracja subdomeny
 
 Subdomena to Twoja osobista przestrzeń w PixDeliver. Zamiast udostępniać galerie pod adresem `pixdeliver.com/g/nazwa-galerii`, możesz używać `twoja-nazwa.pixdeliver.com/nazwa-galerii`.
 
-### Ustawienie własnej subdomeny
+Pole **Subdomena** znajduje się na zakładce **Profil** — tuż pod polami imienia i emaila. Wpisz wybraną nazwę i zapisz — system sprawdzi dostępność w czasie rzeczywistym.
 
-**Instrukcja:**
+**Wymagania nazwy:**
 
-1. Przejdź do **Ustawienia** → **Subdomena**
-2. W polu **Nazwa subdomeny** wpisz wybraną nazwę (np. "jan-kowalski")
-3. System sprawdzi dostępność nazwy w czasie rzeczywistym
-4. Jeśli nazwa jest wolna, kliknij **Zapisz subdomenę**
+- Długość: 3-63 znaki
+- Dozwolone: małe litery (a-z), cyfry (0-9), myślniki (-)
+- Nie może zaczynać się ani kończyć myślnikiem
+- Musi być unikalna w całym systemie
+- Zabronione są zarezerwowane słowa (m.in. `www`, `api`, `admin`, `mail`, `app`, `cdn`, `dev`, `test`, `dashboard`)
 
-**Rezultat:** Twoja subdomena zostanie aktywowana natychmiast. Wszystkie galerie będą dostępne pod adresem `twoja-nazwa.pixdeliver.com`.
-
-<Info>
-  **Wymagania dla subdomeny:**
-
-  - Długość: 3-63 znaki
-  - Dozwolone: małe litery (a-z), cyfry (0-9), myślniki (-)
-  - Nie może zaczynać się ani kończyć myślnikiem
-  - Musi być unikalna w całym systemie
-  - Zabronione są zbyt ogólne nazwy oraz systemowe przedrostki (np. mail, smtp)
-</Info>
-
-### Zmiana subdomeny
-
-**Instrukcja:**
-
-1. Przejdź do **Ustawienia** → **Subdomena**
-2. Wpisz nową nazwę subdomeny
-3. Kliknij **Zaktualizuj subdomenę**
-4. Potwierdź zmianę w oknie dialogowym
-
-**Rezultat:** Subdomena zostanie zmieniona. Stare linki z poprzednią subdomeną przestaną działać.
+Aby usunąć subdomenę, wyczyść pole i zapisz — galerie wrócą na podstawowe adresy `pixdeliver.com/g/...`.
 
 <Warning>
-  **Uwaga!** Po zmianie subdomeny musisz zaktualizować wszystkie linki, które wcześniej wysłałeś klientom. Stara subdomena nie będzie już przekierowywać do Twoich galerii.
+  Zmiana subdomeny natychmiastowo łamie wszystkie wcześniej udostępnione linki z poprzednią nazwą.
 </Warning>
 
-### Usunięcie subdomeny
+<Info>
+  Pełen przewodnik po subdomenach — adresowanie, limity, zmiana i usunięcie — znajdziesz w: [Własna subdomena](/udostepnianie/subdomeny).
+</Info>
 
-Jeśli chcesz korzystać tylko z domyślnych linków `pixdeliver.com/g/nazwa-galerii`:
+### Język interfejsu
 
-**Instrukcja:**
-
-1. Przejdź do **Ustawienia** → **Subdomena**
-2. **Wyczyść** pole nazwy subdomeny
-3. Zapisz (potwierdź)
-
-**Rezultat:** Twoja subdomena zostanie zwolniona i będzie dostępna dla innych użytkowników.
+W zakładce **Profil** znajdziesz też listę rozwijaną **Język interfejsu** (opcje: polski, angielski). Po zmianie i zapisaniu interfejs przeładuje się w wybranym języku.
 
 ---
 
@@ -100,7 +78,7 @@ Jeśli chcesz korzystać tylko z domyślnych linków `pixdeliver.com/g/nazwa-gal
 
 **Instrukcja:**
 
-1. Przejdź do **Ustawienia** → **Hasło**
+1. Przejdź do **Ustawienia** → **Uwierzytelnianie**
 2. Wpisz **aktualne hasło**
 3. Wpisz **nowe hasło** (minimum 8 znaków)
 4. Potwierdź nowe hasło w polu **Potwierdź hasło**
@@ -147,27 +125,15 @@ Jeśli chcesz korzystać tylko z domyślnych linków `pixdeliver.com/g/nazwa-gal
 
 **Rezultat:** Interfejs PixDeliver zmieni schemat kolorów zgodnie z wyborem.
 
-### Język interfejsu
+---
 
-Domyślnie PixDeliver wyświetla się w języku polskim. Możesz zmienić język interfejsu:
-
-**Instrukcja:**
-
-1. Przejdź do **Ustawienia** → **Język**
-2. Wybierz preferowany język z listy
-3. Kliknij **Zapisz**
-
-**Rezultat:** Interfejs zostanie przetłumaczony na wybrany język.
-
-## Bezpieczeństwo
-
-### Uwierzytelnianie dwuskładnikowe (2FA)
+## Uwierzytelnianie dwuskładnikowe (2FA)
 
 Włącz dodatkową warstwę zabezpieczeń dla swojego konta.
 
 **Instrukcja:**
 
-1. Przejdź do **Ustawienia** → **Bezpieczeństwo**
+1. Przejdź do **Ustawienia** → **2FA**
 2. Kliknij **Włącz uwierzytelnianie dwuskładnikowe**
 3. Pobierz aplikację uwierzytelniającą na telefon (np. Google Authenticator, Microsoft Authenticator, Authy)
 4. Zeskanuj kod QR wyświetlony na ekranie
@@ -185,35 +151,69 @@ Włącz dodatkową warstwę zabezpieczeń dla swojego konta.
 
 **Instrukcja:**
 
-1. Przejdź do **Ustawienia** → **Bezpieczeństwo**
+1. Przejdź do **Ustawienia** → **2FA**
 2. Kliknij **Wyłącz uwierzytelnianie dwuskładnikowe**
 3. Podaj kod z aplikacji uwierzytelniającej lub kod awaryjny
 4. Potwierdź wyłączenie
 
 ---
 
+## Aktywne sesje przeglądarki
+
+Zakładka **Ustawienia** → **Sesje** pokazuje wszystkie urządzenia i przeglądarki, w których jesteś obecnie zalogowany.
+
+**Co możesz zrobić:**
+
+- Zobaczyć przeglądarkę, system i lokalizację (na podstawie IP) każdej sesji
+- **Wylogować pojedynczą sesję** — kliknij przycisk przy danym urządzeniu
+- **Wylogować wszystkie inne sesje** — przydatne po zmianie hasła lub utracie urządzenia
+
+---
+
+## Powiązanie z kontem Google
+
+Jeśli zarejestrowałeś się przez Google, możesz w każdej chwili **odłączyć** konto Google od swojego profilu PixDeliver — wówczas kolejne logowania będą wymagały klasycznego emaila i hasła.
+
+<Warning>
+  Zanim odłączysz konto Google, upewnij się, że **ustawiłeś hasło** dla swojego konta PixDeliver (**Ustawienia** → **Uwierzytelnianie**). W przeciwnym razie stracisz jedyną metodę logowania.
+</Warning>
+
+---
+
 ## Usunięcie konta
 
-Jeśli chcesz trwale usunąć swoje konto i wszystkie dane:
+Jeśli chcesz usunąć swoje konto i wszystkie dane:
 
 **Instrukcja:**
 
-1. Przejdź do **Ustawienia** → **Konto**
-2. Przewiń na dół strony
+1. Przejdź do **Ustawienia** → **Profil**
+2. Przewiń na dół strony do sekcji **Usuń konto**
 3. Kliknij **Usuń konto**
 4. Przeczytaj informacje o konsekwencjach usunięcia
 5. Wpisz swoje hasło do potwierdzenia
-6. Kliknij **Trwale usuń moje konto**
+6. Potwierdź usunięcie
 
-**Rezultat:** Twoje konto, wszystkie galerie, zdjęcia i dane zostaną trwale usunięte.
+**Rezultat:** Konto przechodzi w stan **7-dniowego okresu karencji** przed ostatecznym usunięciem.
+
+### Okres karencji (7 dni)
+
+Po potwierdzeniu usunięcia konta:
+
+- Konto zostaje zablokowane — nie możesz już zarządzać galeriami ani przeglądać pulpitu
+- Galerie publiczne przestają być dostępne dla klientów
+- Otrzymujesz email potwierdzający zaplanowane usunięcie
+- Masz **7 dni na zmianę decyzji**
+
+### Anulowanie usunięcia
+
+W ciągu 7 dni możesz anulować usunięcie i odzyskać pełen dostęp do konta:
+
+1. Zaloguj się ponownie — zobaczysz stronę **Konto oczekuje na usunięcie**
+2. Kliknij **Anuluj usunięcie konta**
+3. Konto wraca do pełnej aktywności — galerie i dane są nienaruszone
 
 <Warning>
-  **To działanie jest nieodwracalne!**
-
-  - Wszystkie Twoje galerie staną się niedostępne
-  - Zdjęcia zostaną trwale usunięte
-  - Klienci nie będą mogli już uzyskać dostępu do galerii
-  - Dane nie będą mogły zostać przywrócone
+  **Po upływie 7 dni karencji** konto, wszystkie galerie, zdjęcia, statystyki i powiązane dane zostają **trwale usunięte** i nie ma możliwości ich odzyskania.
 </Warning>
 
 ---
@@ -257,4 +257,5 @@ Jeśli chcesz trwale usunąć swoje konto i wszystkie dane:
 ## Powiązane tematy
 
 - [Tworzenie konta](/pierwsze-kroki/tworzenie-konta) - Jak założyć konto w PixDeliver
+- [Własna subdomena](/udostepnianie/subdomeny) - Pełen przewodnik po subdomenach
 - [Tworzenie galerii](/zarzadzanie-galeriami/tworzenie-galerii) - Jak stworzyć pierwszą galerię
