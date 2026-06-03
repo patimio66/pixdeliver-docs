@@ -20,6 +20,7 @@ Przetwarzane dane obejmują:
 Dane przetwarzane są w następujących celach i na następujących podstawach prawnych:
 
 * świadczenie Usługi (tworzenie i obsługa Konta, galerii) – na podstawie art. 6 ust. 1 lit. b RODO (wykonanie umowy),
+* udostępnienie opcjonalnej funkcji generowania opisów galerii z wykorzystaniem sztucznej inteligencji (na podstawie wprowadzonej przez Użytkownika nazwy galerii oraz opcjonalnego briefu) – na podstawie art. 6 ust. 1 lit. b RODO (wykonanie umowy),
 * obsługa płatności – na podstawie art. 6 ust. 1 lit. b RODO (wykonanie umowy),
 * kontakt z Użytkownikiem w sprawach związanych z Usługą – na podstawie art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes Administratora),
 * realizacja obowiązków prawnych, w tym podatkowych i rachunkowych – na podstawie art. 6 ust. 1 lit. c RODO (obowiązek prawny).
@@ -33,9 +34,10 @@ Dane mogą być przekazywane następującym podmiotom:
 * Cloudflare Workers – usługi serverless,
 * Hetzner – infrastruktura serwerowa,
 * Laravel Nightwatch - monitoring aplikacji i reportowanie błędów,
-* Laravel Forge oraz Laravel Cloud – zarządzanie serwerami.
+* Laravel Forge oraz Laravel Cloud – zarządzanie serwerami,
+* Google (Google Gemini) – generowanie propozycji opisów galerii z wykorzystaniem AI; przetwarzane są wyłącznie dane tekstowe wprowadzone przez Użytkownika (nazwa galerii oraz opcjonalny brief), na podstawie warunków powierzenia przetwarzania danych (processor terms) Google. Dane nie są wykorzystywane do trenowania modeli AI.
 
-Niektóre z powyższych podmiotów (Stripe, Cloudflare, Laravel Forge, Laravel Cloud, Laravel Nightwatch) mają siedzibę poza Europejskim Obszarem Gospodarczym (EOG). W takich przypadkach przekazywanie danych odbywa się na podstawie:
+Niektóre z powyższych podmiotów (Stripe, Cloudflare, Google, Laravel Forge, Laravel Cloud, Laravel Nightwatch) mają siedzibę poza Europejskim Obszarem Gospodarczym (EOG). W takich przypadkach przekazywanie danych odbywa się na podstawie:
 
 * decyzji Komisji Europejskiej stwierdzającej odpowiedni stopień ochrony (w tym EU-US Data Privacy Framework), lub
 * standardowych klauzul umownych (SCC) zatwierdzonych przez Komisję Europejską.
