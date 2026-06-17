@@ -1,0 +1,117 @@
+---
+title: "Własna domena"
+description: "Udostępniaj galerie pod własną domeną (np. galeria.twojestudio.pl) zamiast subdomeny pixdeliver.com"
+---
+
+## Przegląd
+
+Własna domena pozwala udostępniać galerie pod adresem, który całkowicie należy do Ciebie — np. `galeria.twojestudio.pl` lub `photos.yourstudio.com` — zamiast subdomeny `twojestudio.pixdeliver.com`.
+
+<Info>
+  **Własna domena to funkcja Planu Studio.** Bez aktywnego [Planu Studio](/platnosci/plany-i-ceny) możesz nadal korzystać z bezpłatnej [subdomeny](/udostepnianie/subdomeny).
+</Info>
+
+**Czego potrzebujesz:**
+
+- Aktywnego Planu Studio
+- Domeny, do której masz dostęp (panel zarządzania DNS u rejestratora lub dostawcy DNS)
+
+---
+
+## Jak podłączyć własną domenę
+
+**Instrukcja:**
+
+1. Przejdź do **Ustawienia** → **Własna domena**
+2. W polu **Domena** wpisz adres, pod którym chcesz udostępniać galerie (np. `photos.twojestudio.pl`)
+3. Kliknij **Zapisz** — pojawi się sekcja **Konfiguracja DNS** z rekordami do dodania
+4. U swojego dostawcy DNS dodaj wskazane rekordy (patrz niżej)
+5. Poczekaj na weryfikację — status zmieni się automatycznie na **Aktywna**
+
+### Rekordy DNS
+
+Dodaj u swojego dostawcy DNS:
+
+- **Rekord CNAME** wskazujący Twoją domenę na `cname.pixdeliver.com`
+- **Rekord weryfikacyjny TXT** wyświetlony w panelu (potwierdza, że domena należy do Ciebie)
+
+```
+photos.twojestudio.pl   CNAME   cname.pixdeliver.com
+```
+
+<Info>
+  Po dodaniu rekordów PixDeliver sam sprawdza status co kilka sekund. Propagacja DNS może potrwać od kilku minut do kilku godzin.
+</Info>
+
+---
+
+## Automatyczna konfiguracja DNS (Domain Connect)
+
+Jeśli Twój dostawca DNS obsługuje **Domain Connect**, nie musisz dodawać rekordów ręcznie.
+
+1. Po wpisaniu domeny zobaczysz zieloną sekcję **Skonfiguruj DNS automatycznie**
+2. Kliknij przycisk logowania do swojego dostawcy DNS (np. Cloudflare, GoDaddy)
+3. Zaloguj się u dostawcy i potwierdź — rekordy zostaną dodane za Ciebie
+4. Wrócisz do ustawień, a domena przejdzie do weryfikacji
+
+Jeśli dostawca nie obsługuje Domain Connect, użyj konfiguracji ręcznej opisanej wyżej.
+
+---
+
+## Statusy domeny
+
+| Status | Znaczenie |
+| --- | --- |
+| **Oczekująca** | Domena dodana, czeka na rekordy DNS |
+| **Weryfikacja** | Rekordy wykryte, trwa wydawanie certyfikatu SSL |
+| **Aktywna** | Domena działa — galerie są pod nią dostępne |
+| **Błąd** | Weryfikacja się nie powiodła — sprawdź rekordy DNS |
+
+---
+
+## Domeny apex i Cloudflare
+
+<Warning>
+  **Domeny apex (`twojestudio.pl`, bez prefiksu) często nie obsługują rekordu CNAME.** Użyj subdomeny, np. `photos.twojestudio.pl`. Jeśli chcesz wskazać samą domenę apex, a Twój dostawca obsługuje spłaszczanie CNAME (tzw. rekordy ANAME lub ALIAS), możesz z tego skorzystać.
+</Warning>
+
+<Warning>
+  **Jeśli Twoja domena jest na Cloudflare**, ustaw rekord na **„DNS only"** (szara chmurka), a **nie** „proxied" (pomarańczowa) — w przeciwnym razie połączenie się nie powiedzie.
+</Warning>
+
+---
+
+## Subdomena nadal działa
+
+Dodanie własnej domeny **nie usuwa** Twojej subdomeny.
+
+- Własna domena ma **pierwszeństwo** — galerie są serwowane z aktywnej własnej domeny
+- Subdomena `twojestudio.pixdeliver.com` pozostaje dostępna jako **adres zapasowy**
+
+<Info>
+  **Po wygaśnięciu Planu Studio** galerie wracają na bezpłatną subdomenę. Aby ponownie używać własnej domeny, odnów Plan Studio i podłącz domenę w ustawieniach.
+</Info>
+
+---
+
+## Usunięcie własnej domeny
+
+Aby przestać korzystać z własnej domeny, w **Ustawienia** → **Własna domena** **wyczyść pole** i zapisz. Galerie wrócą na subdomenę lub adres podstawowy.
+
+---
+
+## Rozwiązywanie problemów
+
+**Problem:** Status utknął na „Oczekująca". **Rozwiązanie:** Sprawdź, czy rekord CNAME wskazuje dokładnie na `cname.pixdeliver.com`. Propagacja DNS może potrwać kilka godzin.
+
+**Problem:** Status „Błąd". **Rozwiązanie:** Najczęściej przyczyną jest brak rekordu, literówka albo (na Cloudflare) tryb „proxied". Popraw rekordy i poczekaj na ponowną weryfikację.
+
+**Problem:** Nie widzę zakładki **Własna domena**. **Rozwiązanie:** Funkcja wymaga aktywnego Planu Studio. Zobacz [Plany i ceny](/platnosci/plany-i-ceny).
+
+---
+
+## Powiązane tematy
+
+- [Własna subdomena](/udostepnianie/subdomeny) - Bezpłatny adres `*.pixdeliver.com` dla każdego konta
+- [Plany i ceny](/platnosci/plany-i-ceny) - Plan Studio i jego funkcje
+- [Ustawienia konta](/pierwsze-kroki/ustawienia-konta) - Pozostałe ustawienia profilu
