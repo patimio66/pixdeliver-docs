@@ -95,6 +95,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Aktualizacje",
+        "pages": [
+          "aktualizacje"
+        ]
       }
     ],
     "global": {
