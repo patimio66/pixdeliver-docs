@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "PixDeliver - Dokumentacja",
+  "name": "PixDeliver",
   "colors": {
     "primary": "#4F46E5",
     "light": "#736CF0",
@@ -9,142 +9,408 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Dokumentacja",
-        "groups": [
+        "language": "pl",
+        "default": true,
+        "tabs": [
           {
-            "group": "Wprowadzenie",
-            "pages": [
-              "index"
+            "tab": "Dokumentacja",
+            "groups": [
+              {
+                "group": "Wprowadzenie",
+                "pages": [
+                  "index"
+                ]
+              },
+              {
+                "group": "Pierwsze kroki",
+                "pages": [
+                  "pierwsze-kroki/tworzenie-konta",
+                  "pierwsze-kroki/ustawienia-konta"
+                ]
+              },
+              {
+                "group": "Zarządzanie galeriami",
+                "pages": [
+                  "zarzadzanie-galeriami/tworzenie-galerii",
+                  "zarzadzanie-galeriami/wgrywanie-zdjec",
+                  "zarzadzanie-galeriami/organizowanie-zdjec",
+                  "zarzadzanie-galeriami/ustawienia-galerii"
+                ]
+              },
+              {
+                "group": "Płatności i plany",
+                "pages": [
+                  "platnosci/plany-i-ceny",
+                  "platnosci/subskrypcja-konta",
+                  "platnosci/odnowienie-galerii",
+                  "platnosci/kody-kuponow"
+                ]
+              },
+              {
+                "group": "Udostępnianie galerii",
+                "pages": [
+                  "udostepnianie/publiczne-linki",
+                  "udostepnianie/subdomeny",
+                  "udostepnianie/wlasna-domena",
+                  "udostepnianie/ochrona-haslem"
+                ]
+              },
+              {
+                "group": "Dostawa i sprzedaż",
+                "pages": [
+                  "dostawa-i-sprzedaz/sprzedaz-galerii",
+                  "dostawa-i-sprzedaz/zgloszenia-i-rozliczanie"
+                ]
+              },
+              {
+                "group": "Selekcje zdjęć",
+                "pages": [
+                  "selekcje/tworzenie-selekcji",
+                  "selekcje/udostepnianie-selekcji",
+                  "selekcje/zarzadzanie-zgloszeniami"
+                ]
+              },
+              {
+                "group": "Statystyki i analityka",
+                "pages": [
+                  "statystyki/pulpit-glowny"
+                ]
+              },
+              {
+                "group": "Przewodnik dla klientów",
+                "pages": [
+                  "przewodnik-klienta/przegladanie-galerii",
+                  "przewodnik-klienta/kupowanie-zdjec"
+                ]
+              },
+              {
+                "group": "Rozwiązywanie problemów",
+                "pages": [
+                  "rozwiazywanie-problemow/faq"
+                ]
+              },
+              {
+                "group": "Sekcja prawna",
+                "pages": [
+                  "sekcja-prawna/polityka-prywatnosci",
+                  "sekcja-prawna/regulamin"
+                ]
+              }
             ]
           },
           {
-            "group": "Pierwsze kroki",
+            "tab": "Aktualizacje",
             "pages": [
-              "pierwsze-kroki/tworzenie-konta",
-              "pierwsze-kroki/ustawienia-konta"
-            ]
-          },
-          {
-            "group": "Zarządzanie galeriami",
-            "pages": [
-              "zarzadzanie-galeriami/tworzenie-galerii",
-              "zarzadzanie-galeriami/wgrywanie-zdjec",
-              "zarzadzanie-galeriami/organizowanie-zdjec",
-              "zarzadzanie-galeriami/ustawienia-galerii"
-            ]
-          },
-          {
-            "group": "Płatności i plany",
-            "pages": [
-              "platnosci/plany-i-ceny",
-              "platnosci/subskrypcja-konta",
-              "platnosci/odnowienie-galerii",
-              "platnosci/kody-kuponow"
-            ]
-          },
-          {
-            "group": "Udostępnianie galerii",
-            "pages": [
-              "udostepnianie/publiczne-linki",
-              "udostepnianie/subdomeny",
-              "udostepnianie/wlasna-domena",
-              "udostepnianie/ochrona-haslem"
-            ]
-          },
-          {
-            "group": "Dostawa i sprzedaż",
-            "pages": [
-              "dostawa-i-sprzedaz/sprzedaz-galerii",
-              "dostawa-i-sprzedaz/zgloszenia-i-rozliczanie"
-            ]
-          },
-          {
-            "group": "Selekcje zdjęć",
-            "pages": [
-              "selekcje/tworzenie-selekcji",
-              "selekcje/udostepnianie-selekcji",
-              "selekcje/zarzadzanie-zgloszeniami"
-            ]
-          },
-          {
-            "group": "Statystyki i analityka",
-            "pages": [
-              "statystyki/pulpit-glowny"
-            ]
-          },
-          {
-            "group": "Przewodnik dla klientów",
-            "pages": [
-              "przewodnik-klienta/przegladanie-galerii",
-              "przewodnik-klienta/kupowanie-zdjec"
-            ]
-          },
-          {
-            "group": "Rozwiązywanie problemów",
-            "pages": [
-              "rozwiazywanie-problemow/faq"
-            ]
-          },
-          {
-            "group": "Sekcja prawna",
-            "pages": [
-              "sekcja-prawna/polityka-prywatnosci",
-              "sekcja-prawna/regulamin"
+              "aktualizacje"
             ]
           }
-        ]
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "PixDeliver.com",
+              "href": "https://pixdeliver.com",
+              "icon": "globe"
+            },
+            {
+              "anchor": "Wsparcie",
+              "href": "mailto:info@pixdeliver.com",
+              "icon": "envelope"
+            }
+          ]
+        },
+        "navbar": {
+          "links": [
+            {
+              "label": "Zaloguj się",
+              "href": "https://pixdeliver.com/login"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Dashboard",
+            "href": "https://pixdeliver.com/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "facebook": "https://facebook.com/pixdeliver",
+            "instagram": "https://instagram.com/pixdeliver"
+          }
+        }
       },
       {
-        "tab": "Aktualizacje",
-        "pages": [
-          "aktualizacje"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "PixDeliver.com",
-          "href": "https://pixdeliver.com",
-          "icon": "globe"
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "en/index"
+                ]
+              },
+              {
+                "group": "Getting started",
+                "pages": [
+                  "en/pierwsze-kroki/tworzenie-konta",
+                  "en/pierwsze-kroki/ustawienia-konta"
+                ]
+              },
+              {
+                "group": "Managing galleries",
+                "pages": [
+                  "en/zarzadzanie-galeriami/tworzenie-galerii",
+                  "en/zarzadzanie-galeriami/wgrywanie-zdjec",
+                  "en/zarzadzanie-galeriami/organizowanie-zdjec",
+                  "en/zarzadzanie-galeriami/ustawienia-galerii"
+                ]
+              },
+              {
+                "group": "Payments & plans",
+                "pages": [
+                  "en/platnosci/plany-i-ceny",
+                  "en/platnosci/subskrypcja-konta",
+                  "en/platnosci/odnowienie-galerii",
+                  "en/platnosci/kody-kuponow"
+                ]
+              },
+              {
+                "group": "Sharing galleries",
+                "pages": [
+                  "en/udostepnianie/publiczne-linki",
+                  "en/udostepnianie/subdomeny",
+                  "en/udostepnianie/wlasna-domena",
+                  "en/udostepnianie/ochrona-haslem"
+                ]
+              },
+              {
+                "group": "Delivery & sales",
+                "pages": [
+                  "en/dostawa-i-sprzedaz/sprzedaz-galerii",
+                  "en/dostawa-i-sprzedaz/zgloszenia-i-rozliczanie"
+                ]
+              },
+              {
+                "group": "Photo selections",
+                "pages": [
+                  "en/selekcje/tworzenie-selekcji",
+                  "en/selekcje/udostepnianie-selekcji",
+                  "en/selekcje/zarzadzanie-zgloszeniami"
+                ]
+              },
+              {
+                "group": "Statistics & analytics",
+                "pages": [
+                  "en/statystyki/pulpit-glowny"
+                ]
+              },
+              {
+                "group": "Client guide",
+                "pages": [
+                  "en/przewodnik-klienta/przegladanie-galerii",
+                  "en/przewodnik-klienta/kupowanie-zdjec"
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": [
+                  "en/rozwiazywanie-problemow/faq"
+                ]
+              },
+              {
+                "group": "Legal",
+                "pages": [
+                  "en/sekcja-prawna/polityka-prywatnosci",
+                  "en/sekcja-prawna/regulamin"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Updates",
+            "pages": [
+              "en/aktualizacje"
+            ]
+          }
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "PixDeliver.com",
+              "href": "https://pixdeliver.com",
+              "icon": "globe"
+            },
+            {
+              "anchor": "Support",
+              "href": "mailto:info@pixdeliver.com",
+              "icon": "envelope"
+            }
+          ]
         },
-        {
-          "anchor": "Wsparcie",
-          "href": "mailto:info@pixdeliver.com",
-          "icon": "envelope"
+        "navbar": {
+          "links": [
+            {
+              "label": "Log in",
+              "href": "https://pixdeliver.com/login"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Dashboard",
+            "href": "https://pixdeliver.com/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "facebook": "https://facebook.com/pixdeliver",
+            "instagram": "https://instagram.com/pixdeliver"
+          }
         }
-      ]
-    }
+      },
+      {
+        "language": "de",
+        "tabs": [
+          {
+            "tab": "Dokumentation",
+            "groups": [
+              {
+                "group": "Einführung",
+                "pages": [
+                  "de/index"
+                ]
+              },
+              {
+                "group": "Erste Schritte",
+                "pages": [
+                  "de/pierwsze-kroki/tworzenie-konta",
+                  "de/pierwsze-kroki/ustawienia-konta"
+                ]
+              },
+              {
+                "group": "Galerien verwalten",
+                "pages": [
+                  "de/zarzadzanie-galeriami/tworzenie-galerii",
+                  "de/zarzadzanie-galeriami/wgrywanie-zdjec",
+                  "de/zarzadzanie-galeriami/organizowanie-zdjec",
+                  "de/zarzadzanie-galeriami/ustawienia-galerii"
+                ]
+              },
+              {
+                "group": "Zahlungen & Tarife",
+                "pages": [
+                  "de/platnosci/plany-i-ceny",
+                  "de/platnosci/subskrypcja-konta",
+                  "de/platnosci/odnowienie-galerii",
+                  "de/platnosci/kody-kuponow"
+                ]
+              },
+              {
+                "group": "Galerien teilen",
+                "pages": [
+                  "de/udostepnianie/publiczne-linki",
+                  "de/udostepnianie/subdomeny",
+                  "de/udostepnianie/wlasna-domena",
+                  "de/udostepnianie/ochrona-haslem"
+                ]
+              },
+              {
+                "group": "Lieferung & Verkauf",
+                "pages": [
+                  "de/dostawa-i-sprzedaz/sprzedaz-galerii",
+                  "de/dostawa-i-sprzedaz/zgloszenia-i-rozliczanie"
+                ]
+              },
+              {
+                "group": "Fotoauswahlen",
+                "pages": [
+                  "de/selekcje/tworzenie-selekcji",
+                  "de/selekcje/udostepnianie-selekcji",
+                  "de/selekcje/zarzadzanie-zgloszeniami"
+                ]
+              },
+              {
+                "group": "Statistiken & Analysen",
+                "pages": [
+                  "de/statystyki/pulpit-glowny"
+                ]
+              },
+              {
+                "group": "Leitfaden für Kunden",
+                "pages": [
+                  "de/przewodnik-klienta/przegladanie-galerii",
+                  "de/przewodnik-klienta/kupowanie-zdjec"
+                ]
+              },
+              {
+                "group": "Fehlerbehebung",
+                "pages": [
+                  "de/rozwiazywanie-problemow/faq"
+                ]
+              },
+              {
+                "group": "Rechtliches",
+                "pages": [
+                  "de/sekcja-prawna/polityka-prywatnosci",
+                  "de/sekcja-prawna/regulamin"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Aktualisierungen",
+            "pages": [
+              "de/aktualizacje"
+            ]
+          }
+        ],
+        "global": {
+          "anchors": [
+            {
+              "anchor": "PixDeliver.com",
+              "href": "https://pixdeliver.com",
+              "icon": "globe"
+            },
+            {
+              "anchor": "Support",
+              "href": "mailto:info@pixdeliver.com",
+              "icon": "envelope"
+            }
+          ]
+        },
+        "navbar": {
+          "links": [
+            {
+              "label": "Anmelden",
+              "href": "https://pixdeliver.com/login"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Dashboard",
+            "href": "https://pixdeliver.com/dashboard"
+          }
+        },
+        "footer": {
+          "socials": {
+            "facebook": "https://facebook.com/pixdeliver",
+            "instagram": "https://instagram.com/pixdeliver"
+          }
+        }
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Zaloguj się",
-        "href": "https://pixdeliver.com/login"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://pixdeliver.com/dashboard"
-    }
-  },
   "contextual": {
     "options": [
-     "copy",
-     "view"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "facebook": "https://facebook.com/pixdeliver",
-      "instagram": "https://instagram.com/pixdeliver"
-    }
+      "copy",
+      "view"
+    ]
   }
 }

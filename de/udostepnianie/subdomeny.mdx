@@ -1,0 +1,154 @@
+---
+title: "Eigene Subdomain"
+description: "Teilen Sie Galerien unter der Adresse twojastudio.pixdeliver.com statt unter dem einfachen pixdeliver.com/g/..."
+---
+
+## Überblick
+
+Eine Subdomain ist Ihr persönlicher Bereich in PixDeliver. Nach dem Einrichten sind alle Ihre Galerien und Auswahlen unter einer professionell wirkenden Adresse `twojastudio.pixdeliver.com` verfügbar, anstelle des einfachen `pixdeliver.com/g/nazwa-galerii`.
+
+**Wichtige Informationen:**
+
+- Die Subdomain ist **Ihrem Konto** zugeordnet, nicht einer einzelnen Galerie – eine Subdomain umfasst alle Ihre Galerien und Auswahlen
+- Die Funktion ist **kostenlos** und in jedem Plan verfügbar (auch ohne aktiven Studio-Plan)
+- Die Subdomain ist **optional** – ohne sie funktionieren die Galerien weiterhin unter der einfachen Adresse `pixdeliver.com/g/...`
+- Sie erfordert keine DNS-Konfiguration auf Ihrer Seite – wir kümmern uns automatisch um alles
+
+<Info>
+  Sie haben einen **Studio-Plan**? Dann können Sie noch einen Schritt weiter gehen und Galerien unter einer **eigenen Domain** (z. B. `galeria.twojestudio.pl`) teilen. Die eigene Domain hat dann Vorrang, und die Subdomain bleibt als Ausweichadresse aktiv. Siehe: [Eigene Domain](/de/udostepnianie/wlasna-domena).
+</Info>
+
+---
+
+## So richten Sie eine Subdomain ein
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **Profil**
+2. Geben Sie im Feld **Subdomain (optional)** den gewünschten Namen ein
+3. Das System prüft die Verfügbarkeit laufend – Sie sehen eine Meldung:
+   - „Verfügbarkeit wird geprüft …“
+   - ✓ „Diese Subdomain ist verfügbar“
+   - ✗ „Die Subdomain ist belegt, reserviert oder hat ein ungültiges Format“
+4. Klicken Sie auf **Speichern**
+
+**Ergebnis:** Die Subdomain ist sofort aktiv. Alle Ihre Galerien sind unter der neuen Adresse verfügbar.
+
+### Anforderungen an den Namen
+
+<Info>
+  - **Länge:** 3 bis 63 Zeichen
+  - **Erlaubte Zeichen:** Kleinbuchstaben (`a-z`), Ziffern (`0-9`), Bindestriche (`-`)
+  - **Darf nicht** mit einem Bindestrich beginnen oder enden
+  - **Muss eindeutig** im gesamten System sein
+  - **Reservierte Wörter sind gesperrt** – u. a. `www`, `api`, `admin`, `mail`, `app`, `cdn`, `dev`, `test`, `staging`, `dashboard`, `support`, `blog`, `shop` und einige Dutzend weitere technische Präfixe
+</Info>
+
+<Tip>
+  Wenn der Wunschname bereits belegt ist, fügen Sie ein Initial oder eine Spezialisierung hinzu – z. B. `kowalski-foto`, `jk-studio`, `kowalski-wesela`.
+</Tip>
+
+---
+
+## URL-Adressen nach dem Einrichten der Subdomain
+
+Wenn Sie eine Subdomain eingerichtet haben (z. B. `kowalski`), sind Ihre Galerien und Auswahlen unter kurzen Adressen verfügbar:
+
+| Ressource | Adresse |
+| --- | --- |
+| Öffentliche Galerie | `https://kowalski.pixdeliver.com/wesele-anna-tomasz` |
+| Fotoauswahl | `https://kowalski.pixdeliver.com/select/{token}` |
+| Download eines einzelnen Fotos | wird automatisch aus der Galerie heraus abgewickelt |
+
+Ohne Subdomain sind dieselben Ressourcen unter den einfachen Adressen verfügbar:
+
+| Ressource | Adresse |
+| --- | --- |
+| Öffentliche Galerie | `https://pixdeliver.com/g/wesele-anna-tomasz` |
+| Fotoauswahl | `https://pixdeliver.com/select/{token}` |
+
+<Info>
+  Nach dem Einrichten der Subdomain funktionieren in der Regel **beide Formate** weiterhin, es wird jedoch empfohlen, ausschließlich die Version mit Subdomain zu teilen – sie wirkt professioneller und stärkt die Markenwiedererkennung.
+</Info>
+
+---
+
+## Subdomain ändern
+
+Sie können den Namen der Subdomain jederzeit unter **Einstellungen** → **Profil** ändern.
+
+<Warning>
+  **Alte Links funktionieren sofort nicht mehr.** Nach dem Ändern der Subdomain geben alle zuvor geteilten Adressen mit dem vorherigen Namen einen Fehler zurück. Das System zeigt vor dem Speichern der Änderung ein Warn-Modal an, falls auf dem Konto Galerien vorhanden sind.
+</Warning>
+
+**Nach dem Ändern der Subdomain müssen Sie:**
+
+- Die neuen Galerie-Links aus dem Verwaltungsbereich kopieren
+- Die aktualisierten Links an Kunden senden, die die Fotos noch nicht heruntergeladen haben
+- Die Links auf Ihrer Firmen-Website, in E-Mails und auf Visitenkarten aktualisieren
+
+<Tip>
+  Am besten richten Sie die Subdomain **vor** dem Teilen der ersten Galerie ein und ändern sie danach nicht mehr.
+</Tip>
+
+---
+
+## Subdomain entfernen
+
+Wenn Sie zu den einfachen Adressen `pixdeliver.com/g/...` zurückkehren möchten:
+
+1. Gehen Sie zu **Einstellungen** → **Profil**
+2. **Leeren** Sie das Subdomain-Feld (lassen Sie es leer)
+3. Speichern Sie
+
+**Ergebnis:** Ihre Galerien kehren zu den einfachen Adressen zurück. Die Subdomain wird für andere Nutzer verfügbar.
+
+<Warning>
+  Das System verhindert das Entfernen der Subdomain, wenn dadurch ein Slug-Konflikt zwischen Galerien entstehen würde – also wenn Ihre Galerie denselben Slug-Namen hat wie die Galerie eines anderen Nutzers, die über die Hauptdomain ausgeliefert wird. Ändern Sie in diesem Fall zuerst den Slug der konfliktbehafteten Galerie.
+</Warning>
+
+---
+
+## Zugriffslimits
+
+Subdomains haben dieselben Schutzmaßnahmen gegen Missbrauch wie die einfachen Adressen:
+
+| Aktion | Limit |
+| --- | --- |
+| Eingabe des Galerie-Passworts | 10 Versuche / Minute / IP |
+| Download eines einzelnen Fotos | 60 / Minute / IP |
+| Erzeugen eines Download-Links | 5 / Minute / IP |
+| Öffnen einer Auswahl | 60 / Minute / IP |
+
+Die Limits betreffen den öffentlichen Zugriff und sind für typische Nutzer unsichtbar – sie schützen Galerien vor automatischem Herunterladen.
+
+---
+
+## Häufig gestellte Fragen
+
+**Kann ich eine eigene Domain verwenden (z. B. `foto.moja-strona.pl`)?**
+Ja – im Rahmen des **Studio-Plans**. Sie können eine eigene Domain anstelle der Subdomain anbinden; Details zur Konfiguration finden Sie im Leitfaden [Eigene Domain](/de/udostepnianie/wlasna-domena). In den übrigen Plänen steht die kostenlose Subdomain `*.pixdeliver.com` zur Verfügung.
+
+**Kostet die Subdomain etwas?**
+Nein. Die Funktion ist kostenlos und in jedem Plan verfügbar – auch wenn Sie keine aktive bezahlte Galerie haben.
+
+**Muss ich DNS konfigurieren oder eine Domain kaufen?**
+Nein. Wir kümmern uns automatisch um alles auf Seiten von PixDeliver.
+
+**Kann jede Galerie ihre eigene, separate Subdomain haben?**
+Nein. Die Subdomain gilt für das gesamte Konto – sie umfasst alle Ihre Galerien und Auswahlen.
+
+**Was passiert, wenn jemand eine attraktive Subdomain freigibt?**
+Subdomains funktionieren nach dem Prinzip „Wer zuerst kommt, mahlt zuerst“. Es gibt keine Warteschlange und keine Benachrichtigungen über frei werdende Namen.
+
+**Funktioniert die einfache Adresse `pixdeliver.com/g/{slug}` nach dem Einrichten der Subdomain nicht mehr?**
+Die einfache Adresse funktioniert weiterhin. Wir empfehlen jedoch, ausschließlich die Version mit Subdomain zu teilen.
+
+---
+
+## Verwandte Themen
+
+- [Öffentliche Links](/de/udostepnianie/publiczne-linki) – Alles über das Teilen von Galerien mit Kunden
+- [Eigene Domain](/de/udostepnianie/wlasna-domena) – Galerien unter einer eigenen Domain teilen (Studio-Plan)
+- [Kontoeinstellungen](/de/pierwsze-kroki/ustawienia-konta) – Vollständiger Überblick über die Profileinstellungen
+- [Galerie erstellen](/de/zarzadzanie-galeriami/tworzenie-galerii) – Der erste Schritt zum Teilen Ihrer Fotos
