@@ -156,76 +156,76 @@
               {
                 "group": "Getting started",
                 "pages": [
-                  "en/pierwsze-kroki/tworzenie-konta",
-                  "en/pierwsze-kroki/ustawienia-konta"
+                  "en/getting-started/create-account",
+                  "en/getting-started/account-settings"
                 ]
               },
               {
                 "group": "Managing galleries",
                 "pages": [
-                  "en/zarzadzanie-galeriami/tworzenie-galerii",
-                  "en/zarzadzanie-galeriami/wgrywanie-zdjec",
-                  "en/zarzadzanie-galeriami/organizowanie-zdjec",
-                  "en/zarzadzanie-galeriami/ustawienia-galerii"
+                  "en/managing-galleries/create-gallery",
+                  "en/managing-galleries/upload-photos",
+                  "en/managing-galleries/organize-photos",
+                  "en/managing-galleries/gallery-settings"
                 ]
               },
               {
                 "group": "Payments & plans",
                 "pages": [
-                  "en/platnosci/plany-i-ceny",
-                  "en/platnosci/subskrypcja-konta",
-                  "en/platnosci/odnowienie-galerii",
-                  "en/platnosci/kody-kuponow"
+                  "en/payments/plans-and-pricing",
+                  "en/payments/account-subscription",
+                  "en/payments/gallery-renewal",
+                  "en/payments/coupon-codes"
                 ]
               },
               {
                 "group": "Sharing galleries",
                 "pages": [
-                  "en/udostepnianie/publiczne-linki",
-                  "en/udostepnianie/subdomeny",
-                  "en/udostepnianie/wlasna-domena",
-                  "en/udostepnianie/ochrona-haslem"
+                  "en/sharing/public-links",
+                  "en/sharing/subdomains",
+                  "en/sharing/custom-domain",
+                  "en/sharing/password-protection"
                 ]
               },
               {
                 "group": "Delivery & sales",
                 "pages": [
-                  "en/dostawa-i-sprzedaz/sprzedaz-galerii",
-                  "en/dostawa-i-sprzedaz/zgloszenia-i-rozliczanie"
+                  "en/delivery-and-sales/selling-galleries",
+                  "en/delivery-and-sales/requests-and-settlement"
                 ]
               },
               {
                 "group": "Photo selections",
                 "pages": [
-                  "en/selekcje/tworzenie-selekcji",
-                  "en/selekcje/udostepnianie-selekcji",
-                  "en/selekcje/zarzadzanie-zgloszeniami"
+                  "en/selections/create-selection",
+                  "en/selections/share-selection",
+                  "en/selections/manage-submissions"
                 ]
               },
               {
                 "group": "Statistics & analytics",
                 "pages": [
-                  "en/statystyki/pulpit-glowny"
+                  "en/statistics/dashboard"
                 ]
               },
               {
                 "group": "Client guide",
                 "pages": [
-                  "en/przewodnik-klienta/przegladanie-galerii",
-                  "en/przewodnik-klienta/kupowanie-zdjec"
+                  "en/client-guide/viewing-galleries",
+                  "en/client-guide/buying-photos"
                 ]
               },
               {
                 "group": "Troubleshooting",
                 "pages": [
-                  "en/rozwiazywanie-problemow/faq"
+                  "en/troubleshooting/faq"
                 ]
               },
               {
                 "group": "Legal",
                 "pages": [
-                  "en/sekcja-prawna/polityka-prywatnosci",
-                  "en/sekcja-prawna/regulamin"
+                  "en/legal/privacy-policy",
+                  "en/legal/terms-of-service"
                 ]
               }
             ]
@@ -233,7 +233,7 @@
           {
             "tab": "Updates",
             "pages": [
-              "en/aktualizacje"
+              "en/updates"
             ]
           }
         ],
@@ -286,76 +286,76 @@
               {
                 "group": "Erste Schritte",
                 "pages": [
-                  "de/pierwsze-kroki/tworzenie-konta",
-                  "de/pierwsze-kroki/ustawienia-konta"
+                  "de/erste-schritte/konto-erstellen",
+                  "de/erste-schritte/kontoeinstellungen"
                 ]
               },
               {
                 "group": "Galerien verwalten",
                 "pages": [
-                  "de/zarzadzanie-galeriami/tworzenie-galerii",
-                  "de/zarzadzanie-galeriami/wgrywanie-zdjec",
-                  "de/zarzadzanie-galeriami/organizowanie-zdjec",
-                  "de/zarzadzanie-galeriami/ustawienia-galerii"
+                  "de/galerien-verwalten/galerie-erstellen",
+                  "de/galerien-verwalten/fotos-hochladen",
+                  "de/galerien-verwalten/fotos-organisieren",
+                  "de/galerien-verwalten/galerie-einstellungen"
                 ]
               },
               {
                 "group": "Zahlungen & Tarife",
                 "pages": [
-                  "de/platnosci/plany-i-ceny",
-                  "de/platnosci/subskrypcja-konta",
-                  "de/platnosci/odnowienie-galerii",
-                  "de/platnosci/kody-kuponow"
+                  "de/zahlungen/tarife-und-preise",
+                  "de/zahlungen/konto-abonnement",
+                  "de/zahlungen/galerie-verlaengerung",
+                  "de/zahlungen/gutscheincodes"
                 ]
               },
               {
                 "group": "Galerien teilen",
                 "pages": [
-                  "de/udostepnianie/publiczne-linki",
-                  "de/udostepnianie/subdomeny",
-                  "de/udostepnianie/wlasna-domena",
-                  "de/udostepnianie/ochrona-haslem"
+                  "de/teilen/oeffentliche-links",
+                  "de/teilen/subdomains",
+                  "de/teilen/eigene-domain",
+                  "de/teilen/passwortschutz"
                 ]
               },
               {
                 "group": "Lieferung & Verkauf",
                 "pages": [
-                  "de/dostawa-i-sprzedaz/sprzedaz-galerii",
-                  "de/dostawa-i-sprzedaz/zgloszenia-i-rozliczanie"
+                  "de/lieferung-und-verkauf/galerien-verkaufen",
+                  "de/lieferung-und-verkauf/anfragen-und-abrechnung"
                 ]
               },
               {
                 "group": "Fotoauswahlen",
                 "pages": [
-                  "de/selekcje/tworzenie-selekcji",
-                  "de/selekcje/udostepnianie-selekcji",
-                  "de/selekcje/zarzadzanie-zgloszeniami"
+                  "de/auswahlen/auswahl-erstellen",
+                  "de/auswahlen/auswahl-teilen",
+                  "de/auswahlen/einreichungen-verwalten"
                 ]
               },
               {
                 "group": "Statistiken & Analysen",
                 "pages": [
-                  "de/statystyki/pulpit-glowny"
+                  "de/statistiken/dashboard"
                 ]
               },
               {
                 "group": "Leitfaden für Kunden",
                 "pages": [
-                  "de/przewodnik-klienta/przegladanie-galerii",
-                  "de/przewodnik-klienta/kupowanie-zdjec"
+                  "de/kundenleitfaden/galerien-ansehen",
+                  "de/kundenleitfaden/fotos-kaufen"
                 ]
               },
               {
                 "group": "Fehlerbehebung",
                 "pages": [
-                  "de/rozwiazywanie-problemow/faq"
+                  "de/fehlerbehebung/faq"
                 ]
               },
               {
                 "group": "Rechtliches",
                 "pages": [
-                  "de/sekcja-prawna/polityka-prywatnosci",
-                  "de/sekcja-prawna/regulamin"
+                  "de/rechtliches/datenschutz",
+                  "de/rechtliches/nutzungsbedingungen"
                 ]
               }
             ]
@@ -363,7 +363,7 @@
           {
             "tab": "Aktualisierungen",
             "pages": [
-              "de/aktualizacje"
+              "de/aktualisierungen"
             ]
           }
         ],

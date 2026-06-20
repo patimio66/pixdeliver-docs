@@ -1,0 +1,117 @@
+---
+title: "Eigene Domain"
+description: "Teilen Sie Galerien unter einer eigenen Domain (z. B. galeria.twojestudio.pl) statt unter der Subdomain pixdeliver.com"
+---
+
+## Überblick
+
+Mit einer eigenen Domain können Sie Galerien unter einer Adresse teilen, die vollständig Ihnen gehört – z. B. `galeria.twojestudio.pl` oder `photos.yourstudio.com` – anstelle der Subdomain `twojestudio.pixdeliver.com`.
+
+<Info>
+  **Die eigene Domain ist eine Funktion des Studio-Plans.** Ohne aktiven [Studio-Plan](/de/zahlungen/tarife-und-preise) können Sie weiterhin die kostenlose [Subdomain](/de/teilen/subdomains) nutzen.
+</Info>
+
+**Was Sie benötigen:**
+
+- Einen aktiven Studio-Plan
+- Eine Domain, auf die Sie Zugriff haben (DNS-Verwaltungsbereich bei Ihrem Registrar oder DNS-Anbieter)
+
+---
+
+## So binden Sie eine eigene Domain an
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **Eigene Domain**
+2. Geben Sie im Feld **Domain** die Adresse ein, unter der Sie Galerien teilen möchten (z. B. `photos.twojestudio.pl`)
+3. Klicken Sie auf **Speichern** – es erscheint der Abschnitt **DNS-Konfiguration** mit den hinzuzufügenden Einträgen
+4. Fügen Sie bei Ihrem DNS-Anbieter die angegebenen Einträge hinzu (siehe unten)
+5. Warten Sie auf die Verifizierung – der Status ändert sich automatisch auf **Aktiv**
+
+### DNS-Einträge
+
+Fügen Sie bei Ihrem DNS-Anbieter hinzu:
+
+- **CNAME-Eintrag**, der Ihre Domain auf `cname.pixdeliver.com` verweist
+- **TXT-Verifizierungseintrag**, der im Bereich angezeigt wird (bestätigt, dass die Domain Ihnen gehört)
+
+```
+photos.twojestudio.pl   CNAME   cname.pixdeliver.com
+```
+
+<Info>
+  Nach dem Hinzufügen der Einträge prüft PixDeliver den Status selbst alle paar Sekunden. Die DNS-Propagierung kann von einigen Minuten bis zu einigen Stunden dauern.
+</Info>
+
+---
+
+## Automatische DNS-Konfiguration (Domain Connect)
+
+Wenn Ihr DNS-Anbieter **Domain Connect** unterstützt, müssen Sie die Einträge nicht manuell hinzufügen.
+
+1. Nach Eingabe der Domain sehen Sie den grünen Abschnitt **DNS automatisch konfigurieren**
+2. Klicken Sie auf die Schaltfläche zur Anmeldung bei Ihrem DNS-Anbieter (z. B. Cloudflare, GoDaddy)
+3. Melden Sie sich beim Anbieter an und bestätigen Sie – die Einträge werden für Sie hinzugefügt
+4. Sie kehren zu den Einstellungen zurück, und die Domain geht in die Verifizierung über
+
+Wenn Ihr Anbieter Domain Connect nicht unterstützt, verwenden Sie die oben beschriebene manuelle Konfiguration.
+
+---
+
+## Domain-Status
+
+| Status | Bedeutung |
+| --- | --- |
+| **Ausstehend** | Domain hinzugefügt, wartet auf DNS-Einträge |
+| **Verifizierung** | Einträge erkannt, SSL-Zertifikat wird ausgestellt |
+| **Aktiv** | Domain funktioniert – Galerien sind darunter verfügbar |
+| **Fehler** | Verifizierung fehlgeschlagen – prüfen Sie die DNS-Einträge |
+
+---
+
+## Apex-Domains und Cloudflare
+
+<Warning>
+  **Apex-Domains (`twojestudio.pl`, ohne Präfix) unterstützen oft keinen CNAME-Eintrag.** Verwenden Sie eine Subdomain, z. B. `photos.twojestudio.pl`. Wenn Sie auf die Apex-Domain selbst verweisen möchten und Ihr Anbieter CNAME-Flattening (sogenannte ANAME- oder ALIAS-Einträge) unterstützt, können Sie dies nutzen.
+</Warning>
+
+<Warning>
+  **Wenn Ihre Domain bei Cloudflare liegt**, stellen Sie den Eintrag auf **„DNS only“** (graue Wolke) und **nicht** auf „proxied“ (orange Wolke) – andernfalls schlägt die Verbindung fehl.
+</Warning>
+
+---
+
+## Die Subdomain funktioniert weiterhin
+
+Das Hinzufügen einer eigenen Domain **entfernt nicht** Ihre Subdomain.
+
+- Die eigene Domain hat **Vorrang** – Galerien werden von der aktiven eigenen Domain ausgeliefert
+- Die Subdomain `twojestudio.pixdeliver.com` bleibt als **Ausweichadresse** verfügbar
+
+<Info>
+  **Nach Ablauf des Studio-Plans** kehren die Galerien zur kostenlosen Subdomain zurück. Um die eigene Domain wieder zu verwenden, erneuern Sie den Studio-Plan und binden Sie die Domain in den Einstellungen an.
+</Info>
+
+---
+
+## Eigene Domain entfernen
+
+Um die eigene Domain nicht mehr zu verwenden, **leeren Sie das Feld** unter **Einstellungen** → **Eigene Domain** und speichern Sie. Die Galerien kehren zur Subdomain oder zur einfachen Adresse zurück.
+
+---
+
+## Fehlerbehebung
+
+**Problem:** Der Status bleibt bei „Ausstehend“ hängen. **Lösung:** Prüfen Sie, ob der CNAME-Eintrag genau auf `cname.pixdeliver.com` verweist. Die DNS-Propagierung kann einige Stunden dauern.
+
+**Problem:** Status „Fehler“. **Lösung:** Die häufigste Ursache ist ein fehlender Eintrag, ein Tippfehler oder (bei Cloudflare) der „proxied“-Modus. Korrigieren Sie die Einträge und warten Sie auf die erneute Verifizierung.
+
+**Problem:** Ich sehe den Reiter **Eigene Domain** nicht. **Lösung:** Die Funktion erfordert einen aktiven Studio-Plan. Siehe [Pläne und Preise](/de/zahlungen/tarife-und-preise).
+
+---
+
+## Verwandte Themen
+
+- [Eigene Subdomain](/de/teilen/subdomains) – Kostenlose Adresse `*.pixdeliver.com` für jedes Konto
+- [Pläne und Preise](/de/zahlungen/tarife-und-preise) – Der Studio-Plan und seine Funktionen
+- [Kontoeinstellungen](/de/erste-schritte/kontoeinstellungen) – Weitere Profileinstellungen
