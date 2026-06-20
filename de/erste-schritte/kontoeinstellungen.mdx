@@ -1,0 +1,296 @@
+---
+title: "Kontoeinstellungen"
+description: "Verwalten Sie Profil, Subdomain, Passwort, Zugangsschlüssel und Kontoeinstellungen"
+---
+
+## Überblick
+
+Das Einstellungs-Dashboard Ihres Kontos ermöglicht die vollständige Personalisierung Ihres Profils, die Konfiguration einer eigenen Subdomain, das Ändern des Passworts sowie die Anpassung des Oberflächendesigns. Alle Einstellungen sind über das Dashboard erreichbar.
+
+---
+
+## Zugriff auf die Einstellungen
+
+**Anleitung:**
+
+1. Melden Sie sich bei Ihrem PixDeliver-Konto an
+2. Klicken Sie oben rechts auf Ihren **Benutzernamen** oder Ihren **Avatar**
+3. Wählen Sie im Dropdown-Menü **Einstellungen** aus
+4. Sie sehen ein Menü mit verschiedenen Einstellungsbereichen
+
+---
+
+## Profileinstellungen
+
+Das **Profil**-Dashboard ist die Hauptregisterkarte der Einstellungen, in der Sie Name, E-Mail, Subdomain und Oberflächensprache konfigurieren und in der sich die Schaltfläche zum Löschen des Kontos befindet.
+
+### Bearbeiten der persönlichen Daten
+
+**Anleitung:**
+
+1. Wählen Sie im Einstellungsmenü **Profil**
+2. Aktualisieren Sie die gewünschten Felder:
+   - **Vor- und Nachname** – Ihre im System angezeigten Daten
+   - **E-Mail-Adresse** – Ihre Kontakt-E-Mail (dient auch zur Anmeldung)
+3. Klicken Sie auf **Änderungen speichern**
+
+**Ergebnis:** Ihre Daten werden im System aktualisiert.
+
+<Warning>
+  **Ändern der E-Mail-Adresse:** Nach dem Ändern der E-Mail erhalten Sie eine Verifizierungsnachricht an die neue Adresse. Sie müssen die Änderung bestätigen, indem Sie auf den Link in der E-Mail klicken. Adressen von „temporären E-Mail"-Domains werden blockiert.
+</Warning>
+
+---
+
+### Konfiguration der Subdomain
+
+Die Subdomain ist Ihr persönlicher Bereich bei PixDeliver. Anstatt Galerien unter der Adresse `pixdeliver.com/g/galerie-name` bereitzustellen, können Sie `ihr-name.pixdeliver.com/galerie-name` verwenden.
+
+Das Feld **Subdomain** befindet sich auf der Registerkarte **Profil** – direkt unter den Feldern für Name und E-Mail. Geben Sie den gewünschten Namen ein und speichern Sie – das System prüft die Verfügbarkeit in Echtzeit.
+
+**Anforderungen an den Namen:**
+
+- Länge: 3–63 Zeichen
+- Erlaubt: Kleinbuchstaben (a-z), Ziffern (0-9), Bindestriche (-)
+- Darf nicht mit einem Bindestrich beginnen oder enden
+- Muss im gesamten System eindeutig sein
+- Reservierte Wörter sind nicht zulässig (u. a. `www`, `api`, `admin`, `mail`, `app`, `cdn`, `dev`, `test`, `dashboard`)
+
+Um die Subdomain zu entfernen, leeren Sie das Feld und speichern Sie – die Galerien kehren zu den Standardadressen `pixdeliver.com/g/...` zurück.
+
+<Warning>
+  Das Ändern der Subdomain bricht sofort alle zuvor geteilten Links mit dem vorherigen Namen.
+</Warning>
+
+<Info>
+  Den vollständigen Leitfaden zu Subdomains – Adressierung, Limits, Ändern und Entfernen – finden Sie unter: [Eigene Subdomain](/de/teilen/subdomains).
+</Info>
+
+### Oberflächensprache
+
+Auf der Registerkarte **Profil** finden Sie außerdem die Dropdown-Liste **Oberflächensprache** (Optionen: Polnisch, Englisch). Nach dem Ändern und Speichern lädt die Oberfläche in der gewählten Sprache neu.
+
+---
+
+## Passwort ändern
+
+### Standardmäßiges Ändern des Passworts
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **Authentifizierung**
+2. Geben Sie Ihr **aktuelles Passwort** ein
+3. Geben Sie Ihr **neues Passwort** ein (mindestens 8 Zeichen)
+4. Bestätigen Sie das neue Passwort im Feld **Passwort bestätigen**
+5. Klicken Sie auf **Passwort ändern**
+
+**Ergebnis:** Das Passwort wird sofort geändert. Verwenden Sie bei der nächsten Anmeldung das neue Passwort.
+
+<Tip>
+  **Ein sicheres Passwort sollte enthalten:**
+
+  - Mindestens 8 Zeichen (empfohlen 12+)
+  - Groß- und Kleinbuchstaben
+  - Ziffern
+  - Sonderzeichen (!@#\$%^&\*)
+  - Es sollte kein Wort aus dem Wörterbuch sein
+</Tip>
+
+### Passwort zurücksetzen (wenn Sie Ihr Passwort vergessen haben)
+
+**Anleitung:**
+
+1. Klicken Sie auf der Anmeldeseite auf **Passwort vergessen?**
+2. Geben Sie Ihre E-Mail-Adresse ein
+3. Klicken Sie auf **Link zum Zurücksetzen senden**
+4. Öffnen Sie die E-Mail von PixDeliver
+5. Klicken Sie auf den Link zum Zurücksetzen des Passworts
+6. Legen Sie ein neues Passwort fest
+7. Melden Sie sich mit dem neuen Passwort an
+
+---
+
+## Darstellungseinstellungen
+
+### Oberflächendesign
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **Darstellung**
+2. Wählen Sie das bevorzugte Design:
+   - **Hell** – klassische, helle Oberfläche
+   - **Dunkel** – dunkle Oberfläche, angenehm für die Augen
+   - **Automatisch** – passt sich an die Systemeinstellungen an
+3. Die Änderung erfolgt sofort (kein Speichern erforderlich)
+
+**Ergebnis:** Die PixDeliver-Oberfläche ändert das Farbschema entsprechend Ihrer Auswahl.
+
+---
+
+## Zwei-Faktor-Authentifizierung (2FA)
+
+Aktivieren Sie eine zusätzliche Sicherheitsebene für Ihr Konto.
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **2FA**
+2. Klicken Sie auf **Zwei-Faktor-Authentifizierung aktivieren**
+3. Laden Sie eine Authentifizierungs-App auf Ihr Telefon herunter (z. B. Google Authenticator, Microsoft Authenticator, Authy)
+4. Scannen Sie den auf dem Bildschirm angezeigten QR-Code
+5. Geben Sie den 6-stelligen Code aus der App ein
+6. Speichern Sie die **Notfallcodes** an einem sicheren Ort (Datei, Passwort-Manager)
+7. Klicken Sie auf **Bestätigen und aktivieren**
+
+**Ergebnis:** Bei jeder Anmeldung müssen Sie einen Code aus der Authentifizierungs-App angeben.
+
+<Warning>
+  **Speichern Sie die Notfallcodes!** Wenn Sie den Zugriff auf Ihr Telefon verlieren, sind die Notfallcodes die einzige Möglichkeit, den Zugriff auf Ihr Konto wiederherzustellen.
+</Warning>
+
+### Deaktivieren von 2FA
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **2FA**
+2. Klicken Sie auf **Zwei-Faktor-Authentifizierung deaktivieren**
+3. Geben Sie einen Code aus der Authentifizierungs-App oder einen Notfallcode ein
+4. Bestätigen Sie die Deaktivierung
+
+---
+
+## Zugangsschlüssel (Passkeys)
+
+Zugangsschlüssel ermöglichen eine sichere Anmeldung per Fingerabdruck, Gesicht oder Bildschirmsperre des Geräts – anstelle eines Passworts.
+
+### Hinzufügen eines Zugangsschlüssels
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **Zugangsschlüssel**
+2. Klicken Sie auf **Zugangsschlüssel hinzufügen**
+3. Geben Sie einen Namen für den Schlüssel ein (z. B. „MacBook Pro", „iPhone") – das hilft Ihnen, ihn später wiederzuerkennen
+4. Klicken Sie auf **Zugangsschlüssel registrieren**
+5. Bestätigen Sie auf dem Gerät (Fingerabdruck, Gesicht, PIN oder Hardware-Schlüssel)
+
+**Ergebnis:** Der Schlüssel erscheint in der Liste. Ab jetzt können Sie sich ohne Passwort anmelden.
+
+### Anmeldung mit einem Zugangsschlüssel
+
+Klicken Sie auf der Anmeldeseite auf **Mit Zugangsschlüssel anmelden** und bestätigen Sie auf dem Gerät. Der Schlüssel kann auch zur Bestätigung Ihrer Identität bei sensiblen Vorgängen dienen (Schaltfläche **Mit Zugangsschlüssel bestätigen**).
+
+### Verwalten der Schlüssel
+
+In der Schlüsselliste sehen Sie den Namen sowie das Datum des Hinzufügens und der letzten Verwendung. Um einen Schlüssel zu entfernen, klicken Sie auf das Papierkorb-Symbol und bestätigen Sie – er kann dann nicht mehr zur Anmeldung verwendet werden.
+
+<Info>
+  Zugangsschlüssel funktionieren auf Geräten und in Browsern, die sie unterstützen. Wenn Ihr Browser sie nicht unterstützt, sehen Sie eine entsprechende Meldung – verwenden Sie dann ein Passwort.
+</Info>
+
+<Tip>
+  Zugangsschlüssel können Sie mit Passwort, Google-Anmeldung und 2FA kombinieren. Fügen Sie auf jedem Ihrer Geräte einen Schlüssel hinzu, um sich immer schnell anmelden zu können.
+</Tip>
+
+---
+
+## Aktive Browser-Sitzungen
+
+Die Registerkarte **Einstellungen** → **Sitzungen** zeigt alle Geräte und Browser an, in denen Sie aktuell angemeldet sind.
+
+**Was Sie tun können:**
+
+- Browser, System und Standort (basierend auf der IP) jeder Sitzung anzeigen
+- **Eine einzelne Sitzung abmelden** – klicken Sie auf die Schaltfläche beim jeweiligen Gerät
+- **Alle anderen Sitzungen abmelden** – nützlich nach einer Passwortänderung oder dem Verlust eines Geräts
+
+---
+
+## Verknüpfung mit dem Google-Konto
+
+Wenn Sie sich über Google registriert haben, können Sie das Google-Konto jederzeit von Ihrem PixDeliver-Profil **trennen** – nachfolgende Anmeldungen erfordern dann eine klassische E-Mail und ein Passwort.
+
+<Warning>
+  Bevor Sie das Google-Konto trennen, stellen Sie sicher, dass Sie ein **Passwort festgelegt** haben für Ihr PixDeliver-Konto (**Einstellungen** → **Authentifizierung**). Andernfalls verlieren Sie Ihre einzige Anmeldemethode.
+</Warning>
+
+---
+
+## Konto löschen
+
+Wenn Sie Ihr Konto und alle Daten löschen möchten:
+
+**Anleitung:**
+
+1. Gehen Sie zu **Einstellungen** → **Profil**
+2. Scrollen Sie auf der Seite nach unten zum Abschnitt **Konto löschen**
+3. Klicken Sie auf **Konto löschen**
+4. Lesen Sie die Informationen zu den Folgen der Löschung
+5. Geben Sie zur Bestätigung Ihr Passwort ein
+6. Bestätigen Sie die Löschung
+
+**Ergebnis:** Das Konto geht in einen **7-tägigen Kulanzzeitraum** vor der endgültigen Löschung über.
+
+### Kulanzzeitraum (7 Tage)
+
+Nach Bestätigung der Kontolöschung:
+
+- Das Konto wird gesperrt – Sie können keine Galerien mehr verwalten und das Dashboard nicht mehr aufrufen
+- Öffentliche Galerien sind für Kunden nicht mehr zugänglich
+- Sie erhalten eine E-Mail, die die geplante Löschung bestätigt
+- Sie haben **7 Tage Zeit, Ihre Entscheidung zu ändern**
+
+### Löschung abbrechen
+
+Innerhalb von 7 Tagen können Sie die Löschung abbrechen und den vollständigen Zugriff auf Ihr Konto wiederherstellen:
+
+1. Melden Sie sich erneut an – Sie sehen die Seite **Konto wartet auf Löschung**
+2. Klicken Sie auf **Kontolöschung abbrechen**
+3. Das Konto kehrt zur vollständigen Aktivität zurück – Galerien und Daten bleiben unversehrt
+
+<Warning>
+  **Nach Ablauf der 7-tägigen Kulanzzeit** werden das Konto, alle Galerien, Fotos, Statistiken und zugehörigen Daten **dauerhaft gelöscht** und können nicht wiederhergestellt werden.
+</Warning>
+
+---
+
+## Tipps und bewährte Praktiken
+
+✅ **Empfohlen:**
+
+- Legen Sie eine professionelle Subdomain fest, die Ihren Vor- und Nachnamen oder Ihren Firmennamen verwendet
+- Aktivieren Sie die Zwei-Faktor-Authentifizierung
+- Fügen Sie einen Zugangsschlüssel (Passkey) für eine schnelle und sichere Anmeldung ohne Passwort hinzu
+- Aktualisieren Sie Ihr Passwort regelmäßig (alle 3–6 Monate)
+- Bewahren Sie die 2FA-Notfallcodes an einem sicheren Ort auf
+- Verwenden Sie eine professionelle E-Mail-Adresse (am besten mit eigener Domain)
+- Aktivieren Sie Benachrichtigungen über ablaufende Galerien
+
+❌ **Vermeiden Sie:**
+
+- Eine Subdomain mit Sonderzeichen oder schwer zu merkenden Zeichenfolgen zu verwenden
+- Alle E-Mail-Benachrichtigungen zu deaktivieren
+- Ihre Anmeldedaten an andere Personen weiterzugeben
+- Das Konto zu löschen, ohne vorher wichtige Fotos heruntergeladen zu haben
+
+---
+
+## Fehlerbehebung
+
+**Problem:** Die Subdomain ist bereits vergeben. **Lösung:**
+
+- Versuchen Sie, Zeichen oder die Initiale eines zweiten Vornamens hinzuzufügen (z. B. jan-kowalski-foto, jkowalski)
+- Verwenden Sie den Firmennamen anstelle des Namens
+- Fügen Sie eine Spezialisierung hinzu (z. B. kowalski-wesela, kowalski-photo)
+
+**Problem:** Ich kann mich nach dem Aktivieren von 2FA nicht anmelden. **Lösung:**
+
+- Stellen Sie sicher, dass Sie den aktuellen Code aus der App eingeben (Codes sind 30 Sekunden gültig)
+- Überprüfen Sie, ob die **Uhrzeit auf Ihrem Telefon** synchronisiert ist
+- Verwenden Sie einen der Notfallcodes und deaktivieren Sie 2FA, und versuchen Sie anschließend, es erneut zu konfigurieren.
+
+---
+
+## Verwandte Themen
+
+- [Konto erstellen](/de/erste-schritte/konto-erstellen) – Wie Sie ein Konto bei PixDeliver erstellen
+- [Eigene Subdomain](/de/teilen/subdomains) – Vollständiger Leitfaden zu Subdomains
+- [Galerie erstellen](/de/galerien-verwalten/galerie-erstellen) – Wie Sie Ihre erste Galerie erstellen

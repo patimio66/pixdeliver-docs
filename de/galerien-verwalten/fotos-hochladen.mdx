@@ -1,0 +1,318 @@
+---
+title: "Fotos hochladen"
+description: "Erfahren Sie, wie Sie Fotos zu Galerien in PixDeliver hinzufügen"
+---
+
+## Überblick
+
+PixDeliver ermöglicht das Hochladen von Fotos in hoher Qualität in Ihre Galerien über eine einfache Drag-and-Drop-Oberfläche. Das System verarbeitet die Fotos automatisch und erstellt optimale Versionen zum Ansehen und Herunterladen, während die Originale erhalten bleiben.
+
+---
+
+## Schritt für Schritt
+
+### 1. Öffnen Sie die Galerie
+
+**Anleitung:**
+
+1. Melden Sie sich bei PixDeliver an
+2. Wechseln Sie zum Reiter **Galerien**
+3. Suchen Sie die Galerie, zu der Sie Fotos hinzufügen möchten, und klicken Sie darauf
+
+**Ergebnis:** Sie sehen die Galerie-Seite mit dem Reiter zum Hochladen von Fotos.
+
+---
+
+### 2. Starten Sie das Hochladen
+
+**Anleitung:**
+
+1. Klicken Sie auf die Schaltfläche **Fotos hochladen** oder **Fotos hinzufügen**
+2. Es öffnet sich ein Fenster zur Dateiauswahl
+
+**Alternative Methode (Drag & Drop):**
+
+1. Suchen Sie die Fotos auf Ihrem Computer im Datei-Explorer
+2. Ziehen Sie sie direkt auf die Galerie-Seite in Ihrem Browser
+3. Lassen Sie sie im dafür vorgesehenen Bereich los
+
+<Warning>
+  Die Reihenfolge des Hinzufügens der Fotos ist relevant – die Fotos werden in der Galerie in genau der Reihenfolge angeordnet, in der sie hinzugefügt wurden.
+</Warning>
+
+<Tip>
+  **Die Drag-and-Drop-Methode** ist am schnellsten! Sie können einen ganzen Ordner mit Fotos direkt aus dem Datei-Explorer ziehen.
+</Tip>
+
+---
+
+### 3. Wählen Sie die Fotos zum Hochladen aus
+
+**Anleitung:**
+
+1. Wechseln Sie im Dateiauswahlfenster zum Ordner mit den Fotos
+2. Wählen Sie die Fotos aus:
+   - **Einzelnes Foto**: Klicken Sie auf die Datei
+   - **Mehrere Fotos**: Halten Sie `Strg` (Windows) oder `Cmd` (Mac) gedrückt und klicken Sie nacheinander auf die Fotos
+   - **Alle Fotos**: Drücken Sie `Strg+A` (Windows) oder `Cmd+A` (Mac)
+3. Klicken Sie auf **Öffnen** oder **Auswählen**
+
+**Ergebnis:** Die ausgewählten Fotos werden zur Upload-Warteschlange hinzugefügt.
+
+---
+
+### 4. Verfolgen Sie den Upload-Fortschritt
+
+**Anleitung:**
+
+1. Beobachten Sie den Fortschrittsbalken für jedes Foto
+2. Sie sehen:
+   - Den Dateinamen
+   - Die Dateigröße
+   - Den Prozentsatz der Übertragung
+   - Den Status: „Wird übertragen...", „Wird verarbeitet...", „Fertig"
+
+**Ergebnis:** Sie können verfolgen, welche Fotos bereits hochgeladen wurden und welche sich noch in Bearbeitung befinden.
+
+<Info>
+  **Schließen Sie den Browser nicht** während des Hochladens der Fotos. Wenn Sie den Tab versehentlich schließen, wird der Upload unterbrochen und Sie müssen ihn fortsetzen.
+</Info>
+
+---
+
+### 5. Warten Sie auf die Verarbeitung
+
+Nach dem Hochladen verarbeitet das System die Fotos automatisch:
+
+**Was passiert:**
+
+1. **Upload** – Das Foto wird an den Server gesendet
+2. **Speicherung des Originals** – Die Originaldatei wird sicher gespeichert
+3. **Korrektur der Ausrichtung** – Automatische Korrektur der Drehung anhand der EXIF-Daten
+4. **Erstellung der Miniaturansicht** – Erstellung einer 900×900-WebP-Version zur Anzeige als Miniaturansicht
+5. **Erstellung der komprimierten Version** – Erstellung einer 3840×3840-WebP-Version für die große Vorschau
+6. **Finalisierung** – Das Foto ist fertig und in der Galerie sichtbar
+
+**Ergebnis:** Die Fotos erscheinen in der Galerie und stehen zur Ansicht bereit.
+
+<Tip>
+  Die Verarbeitungszeit hängt von der Dateigröße ab. Üblicherweise dauert sie wenige bis einige Sekunden pro Foto. Die Verarbeitung erfolgt auf dem Server, sodass Sie dafür keinen geöffneten Browser benötigen.
+</Tip>
+
+---
+
+## Formate und Limits
+
+### Unterstützte Formate
+
+PixDeliver unterstützt alle gängigen Fotoformate:
+
+✅ **Empfohlene Formate:**
+
+- **JPEG / JPG (am häufigsten verwendet)**
+- PNG (für Bilder mit Transparenz)
+- WebP (modernes, komprimiertes Format, kann jedoch mit einigen Geräten inkompatibel sein)
+
+<Info>
+  Das System konvertiert alle Formate automatisch in WebP für optimale Qualität und Ladegeschwindigkeit. Die Originalfotos stehen sowohl Ihren Kunden als auch Ihnen zum Herunterladen zur Verfügung. Es wird stets das Originalfoto heruntergeladen.
+</Info>
+
+### Größenbeschränkungen
+
+- **Maximale Größe eines einzelnen Fotos:** 30 MB
+- **Limit für einen einzelnen Upload:** Keines (Sie können Hunderte von Fotos gleichzeitig hochladen)
+- **Galerie-Limit:**
+  - Plan Kleine Galerie: insgesamt 3 GB
+  - Plan Große Galerie: Ohne Limit
+
+<Warning>
+  Wenn ein Foto 30 MB überschreitet, müssen Sie es vor dem Hochladen verkleinern. Verwenden Sie ein Bildbearbeitungsprogramm oder reduzieren Sie die Qualität/Auflösung.
+</Warning>
+
+---
+
+## Foto-Versionen
+
+Um ein optimales Erlebnis beim Betrachten der Fotos zu gewährleisten, setzt PixDeliver Lösungen ein, die aus beliebten Anwendungen zur Bildspeicherung bekannt sind, und erstellt automatisch drei Versionen jedes Fotos:
+
+### 1. Original
+
+- Wird genau in der Form gespeichert, in der es hochgeladen wurde
+- Ohne Komprimierung, ohne Qualitätsänderung
+- Wird verwendet, damit Kunden das „Original" herunterladen können
+- Wird nicht im Browser angezeigt
+
+### 2. Miniaturansicht (Thumbnail)
+
+- Größe: 900×900 Pixel
+- Format: WebP
+- Verwendet für: Anzeige im Galerie-Raster
+- Qualität: Hoch, optimiert für schnelles Laden
+
+### 3. Komprimierte Version
+
+- Größe: 3840×3840 Pixel (4K)
+- Format: WebP
+- Verwendet für: Vollbildvorschau
+- Qualität: Sehr hoch, aber kleinere Dateigröße als das Original
+
+---
+
+## Automatische Korrekturen
+
+### Korrektur der Ausrichtung
+
+PixDeliver erkennt und korrigiert die Ausrichtung der Fotos automatisch anhand der EXIF-Daten:
+
+- Hochformatige Fotos werden im Hochformat angezeigt
+- Querformatige Fotos werden im Querformat angezeigt
+- Gedrehte Fotos werden automatisch ausgerichtet
+
+Sie müssen die Fotos vor dem Hochladen nicht manuell drehen.
+
+---
+
+## Überwachung fehlgeschlagener Konvertierungen
+
+Manchmal kann die Verarbeitung eines Fotos fehlschlagen (beschädigte Datei, nicht unterstütztes Format, technisches Problem).
+
+### Fehler bei der Foto-Konvertierung
+
+Das System unternimmt automatisch über einige Minuten hinweg Versuche, die Konvertierung der Dateien zu wiederholen. Wenn das Foto trotz des Zeitablaufs nicht verarbeitet wurde, stellen Sie sicher, dass es nicht beschädigt ist.
+
+### Fehlerbehebung
+
+**Anleitung:**
+
+1. Überprüfen Sie, ob die Dateien nicht beschädigt sind
+3. Stellen Sie sicher, dass das Format unterstützt wird
+4. Verkleinern Sie die Datei, wenn sie 30 MB überschreitet
+5. Laden Sie die Fotos erneut hoch
+
+**Ergebnis:** Die korrekten Fotos werden verarbeitet und zur Galerie hinzugefügt.
+
+<Warning>
+  Das System sendet eine Benachrichtigung, wenn es eine fehlgeschlagene Konvertierung erkennt.
+</Warning>
+
+---
+
+## Tipps und bewährte Vorgehensweisen
+
+✅ **Empfohlen:**
+
+- Laden Sie Fotos in hoher Qualität hoch (am besten Export aus Lightroom/Capture One)
+- Verwenden Sie das JPEG-Format mit einer Qualität von 90–95 % für ein optimales Verhältnis von Qualität und Größe
+- Laden Sie alle Fotos auf einmal hoch (schneller als nacheinander)
+- Verwenden Sie eine schnelle Internetverbindung (am besten kabelgebunden)
+- Bearbeiten Sie die Fotos vor dem Hochladen (Farbkorrektur, Zuschneiden)
+- Benennen Sie die Dateien geordnet (z. B. 001.jpg, 002.jpg usw.)
+
+❌ **Vermeiden Sie:**
+
+- Das Hochladen von Fotos in niedriger Qualität oder geringer Größe
+- Das mehrfache Hochladen derselben Fotos
+- Das Schließen des Browsers während des Uploads
+- Das Hochladen von Fotos über langsames WLAN
+- Das Hochladen von RAW-Dateien (exportieren Sie zuerst in JPEG)
+- Das Hochladen von Fotos, die größer als 30 MB sind, ohne vorherige Komprimierung
+
+---
+
+## Optimierung vor dem Hochladen
+
+### Export aus Lightroom
+
+Empfohlene Exporteinstellungen:
+
+- **Format:** JPEG
+- **Qualität:** 90–95 %
+- **Auflösung:** Länge der längeren Seite 4000–6000 Pixel
+- **Farbraum:** sRGB
+- **Schärfung:** Für Bildschirm, Standard
+- **Metadaten:** Alle (oder ausgewählte)
+
+### Export aus Capture One
+
+Empfohlene Einstellungen:
+
+- **Format:** JPEG
+- **Qualität:** 95 %
+- **Auflösung:** 4000–6000 Pixel (längere Seite)
+- **ICC-Profil:** sRGB IEC61966-2.1
+- **Schärfung:** Medium
+
+### Export aus Photoshop
+
+- **Datei** → **Exportieren** → **Exportieren als**
+- **Format:** JPEG
+- **Qualität:** 80–90 %
+- **Farbprofil:** In sRGB konvertieren
+
+<Info>
+  **Warum sRGB?** Das ist der Standard-Farbraum für die Anzeige im Internet. Adobe RGB oder ProPhoto RGB können in Browsern und auf Standardmonitoren blass wirken.
+</Info>
+
+---
+
+## Fehlerbehebung
+
+**Problem:** Das Hochladen dauert sehr lange. **Lösung:**
+
+- Überprüfen Sie die Geschwindigkeit Ihrer Internetverbindung
+- Verwenden Sie eine kabelgebundene Verbindung anstelle von WLAN
+- Reduzieren Sie die Anzahl der gleichzeitig hochgeladenen Fotos
+
+**Problem:** Das Foto wurde abgelehnt (überschreitet 30 MB). **Lösung:**
+
+- Reduzieren Sie die Exportqualität auf 85–90 %
+- Verringern Sie die Auflösung (z. B. auf 5000 Pixel längere Seite)
+- Verwenden Sie die Komprimierung in einem Grafikprogramm
+
+**Problem:** Das Foto ist falsch gedreht. **Lösung:**
+
+- Drehen Sie das Foto in einem Grafikprogramm
+- Speichern Sie es mit korrekten EXIF-Ausrichtungsdaten
+- Laden Sie es erneut hoch
+
+**Problem:** Die Konvertierung des Fotos ist fehlgeschlagen. **Lösung:**
+
+- Überprüfen Sie, ob die Datei nicht beschädigt ist (öffnen Sie sie in einem Grafikprogramm)
+- Stellen Sie sicher, dass das Format unterstützt wird
+- Versuchen Sie, das Foto erneut aus dem Bearbeitungsprogramm zu exportieren
+
+**Problem:** Nach dem Hochladen haben die Fotos falsche Farben. **Lösung:**
+
+- Stellen Sie sicher, dass Sie im sRGB-Profil exportieren
+- Überprüfen Sie die Exporteinstellungen in Ihrem Bearbeitungsprogramm
+- Verwenden Sie weder Adobe RGB noch ProPhoto RGB
+
+---
+
+## Nach dem Hochladen der Fotos
+
+Nach Abschluss des Uploads:
+
+<CardGroup cols={2}>
+  <Card title="Fotos organisieren" icon="arrow-down-short-wide" href="/de/galerien-verwalten/fotos-organisieren">
+    Legen Sie die Reihenfolge fest und fügen Sie ein Titelbild hinzu
+  </Card>
+  <Card title="Galerie überprüfen" icon="eye" href="/de/teilen/oeffentliche-links">
+    Sehen Sie, wie die Galerie für Kunden aussieht
+  </Card>
+  <Card title="Galerie bezahlen" icon="credit-card" href="/de/zahlungen/tarife-und-preise">
+    Aktivieren Sie die Galerie und geben Sie sie für Kunden frei
+  </Card>
+  <Card title="Auswahl erstellen" icon="circle-check" href="/de/auswahlen/auswahl-erstellen">
+    Lassen Sie Kunden ihre Lieblingsfotos auswählen
+  </Card>
+</CardGroup>
+
+---
+
+## Verwandte Themen
+
+- [Galerie erstellen](/de/galerien-verwalten/galerie-erstellen) – Wie Sie eine neue Galerie erstellen
+- [Fotos organisieren](/de/galerien-verwalten/fotos-organisieren) – Wie Sie die Reihenfolge der Fotos festlegen
+- [Pläne und Preise](/de/zahlungen/tarife-und-preise) – Überprüfen Sie die Speicherlimits der Pläne
+- [Galerie-Einstellungen](/de/galerien-verwalten/galerie-einstellungen) – Bearbeitung der Galerie nach dem Hochladen
